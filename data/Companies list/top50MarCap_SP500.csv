@@ -1,0 +1,51 @@
+﻿Industry Sector,Company Name,Symbol,Stock Exchange
+Information Technology,Microsoft Corporation,MSFT,NASDAQ
+Information Technology,Apple Inc.,AAPL,NASDAQ
+Consumer Discretionary,Amazon.com Inc.,AMZN,NASDAQ
+Information Technology,Nvidia Corporation,NVDA,NASDAQ
+Communication Services,Meta Platforms Inc.,META,NASDAQ
+Communication Services,Alphabet Inc. (Class A),GOOGL,NASDAQ
+Financials,Berkshire Hathaway Inc. (Class B),BRK.B,NYSE
+Consumer Discretionary,Tesla Inc.,TSLA,NASDAQ
+Health Care,UnitedHealth Group Incorporated,UNH,NYSE
+Health Care,Eli Lilly and Company,LLY,NYSE
+Energy,Exxon Mobil Corporation,XOM,NYSE
+Financials,JPMorgan Chase & Co.,JPM,NYSE
+Information Technology,VISA Inc.,V,NYSE
+Health Care,Johnson & Johnson,JNJ,NYSE
+Consumer Staples,Procter & Gamble Company (The),PG,NYSE
+Information Technology,Broadcom Inc.,AVGO,NASDAQ
+Information Technology,Mastercard Incorporated (Class A),MA,NYSE
+Consumer Discretionary,The Home Depot Inc.,HD,NYSE
+Energy,Chevron Corporation,CVX,NYSE
+Health Care,Merck & Co. Inc.,MRK,NYSE
+Health Care,AbbVie Inc.,ABBV,NYSE
+Consumer Staples,Costco Wholesale Corporation,COST,NASDAQ
+Information Technology,Adobe Inc.,ADBE,NASDAQ
+Consumer Staples,Walmart Inc.,WMT,NYSE
+Consumer Staples,PepsiCo Inc.,PEP,NASDAQ
+Consumer Staples,Coca-Cola Company (The),KO,NYSE
+Information Technology,Cisco Systems Inc.,CSCO,NASDAQ
+Information Technology,Salesforce.com Inc.,CRM,NYSE
+Consumer Discretionary,McDonald's Corporation,MCD,NYSE
+Industrials,Accenture plc (Class A),ACN,NYSE
+Communication Services,Netflix Inc.,NFLX,NASDAQ
+Materials,Linde plc,LIN,NYSE
+Financials,Bank of America Corporation,BAC,NYSE
+Communication Services,Comcast Corporation (Class A),CMCSA,NASDAQ
+Health Care,Pfizer Inc.,PFE,NYSE
+Health Care,Thermo Fisher Scientific Inc.,TMO,NYSE
+Health Care,Abbott Laboratories,ABT,NYSE
+Information Technology,Oracle Corporation,ORCL,NYSE
+Information Technology,Advanced Micro Devices Inc.,AMD,NASDAQ
+Consumer Discretionary,Walt Disney Company (The),DIS,NYSE
+Health Care,Amgen Inc.,AMGN,NASDAQ
+Energy,ConocoPhillips,COP,NYSE
+Financials,Wells Fargo & Company,WFC,NYSE
+Communication Services,Verizon Communications Inc.,VZ,NYSE
+Consumer Staples,Kraft Heinz Company (The),KHC,NASDAQ
+Industrials,Honeywell International Inc.,HON,NYSE
+Information Technology,Qualcomm Incorporated,QCOM,NASDAQ
+Utilities,Dominion Energy Inc,D,NYSE
+Materials,Dow Chemical Company (The),DOW,NYSE
+Materials,Ecolab Inc,ECL,NYSE
