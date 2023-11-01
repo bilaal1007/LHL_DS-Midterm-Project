@@ -1,0 +1,618 @@
+,Company Name,Company Code,Market Cap,Price,Today's Change,Price (30 days),Country
+0,Apple,AAPL,$2.669 T,$170.77,0.28%,,🇺🇸 USA
+1,Microsoft,MSFT,$2.512 T,$338.11,0.24%,,🇺🇸 USA
+2,Alphabet (Google),GOOG,$1.559 T,$125.30,0.36%,,🇺🇸 USA
+3,Amazon,AMZN,$1.375 T,$133.09,0.29%,,🇺🇸 USA
+4,NVIDIA,NVDA,$1.007 T,$407.80,0.93%,,🇺🇸 USA
+5,Meta Platforms (Facebook),META,$774.22 B,$301.27,0.46%,,🇺🇸 USA
+6,Berkshire Hathaway ,BRK-B,$744.39 B,$341.33,1.16%,,🇺🇸 USA
+7,Tesla,TSLA,$638.45 B,$200.84,1.76%,,🇺🇸 USA
+8,Eli Lilly,LLY,$525.84 B,$553.93,2.08%,,🇺🇸 USA
+9,UnitedHealth,UNH,$496.09 B,$535.56,1.05%,,🇺🇸 USA
+10,Visa,V,$486.38 B,$235.10,0.87%,,🇺🇸 USA
+11,Walmart,WMT,$439.82 B,$163.41,0.24%,,🇺🇸 USA
+12,Exxon Mobil,XOM,$419.47 B,$105.85,0.03%,,🇺🇸 USA
+13,JPMorgan Chase,JPM,$402.02 B,$139.06,1.19%,,🇺🇸 USA
+14,Johnson & Johnson,JNJ,$357.09 B,$148.34,0.89%,,🇺🇸 USA
+15,Procter & Gamble,PG,$353.60 B,$150.03,0.52%,,🇺🇸 USA
+16,Mastercard,MA,$352.93 B,$376.35,1.06%,,🇺🇸 USA
+17,Broadcom,AVGO,$347.26 B,$841.37,0.01%,,🇺🇸 USA
+18,Home Depot,HD,$284.70 B,$284.69,1.14%,,🇺🇸 USA
+19,Oracle,ORCL,$283.25 B,$103.40,1.72%,,🇺🇸 USA
+20,Chevron,CVX,$277.99 B,$145.73,0.25%,,🇺🇸 USA
+21,Merck,MRK,$260.60 B,$102.70,0.02%,,🇺🇸 USA
+22,AbbVie,ABBV,$249.18 B,$141.18,0.50%,,🇺🇸 USA
+23,Costco,COST,$244.58 B,$552.44,0.44%,,🇺🇸 USA
+24,Coca-Cola,KO,$244.22 B,$56.49,0.61%,,🇺🇸 USA
+25,Adobe,ADBE,$242.24 B,$532.06,0.97%,,🇺🇸 USA
+26,Pepsico,PEP,$224.48 B,$163.28,0.62%,,🇺🇸 USA
+27,Cisco,CSCO,$211.15 B,$52.13,1.09%,,🇺🇸 USA
+28,Bank of America ,BAC,$208.70 B,$26.34,2.53%,,🇺🇸 USA
+29,Salesforce,CRM,$195.40 B,$200.83,0.78%,,🇺🇸 USA
+30,McDonald,MCD,$191.05 B,$262.17,0.78%,,🇺🇸 USA
+31,Netflix,NFLX,$180.18 B,$411.69,0.39%,,🇺🇸 USA
+32,Pfizer,PFE,$172.54 B,$30.56,0.03%,,🇺🇸 USA
+33,Thermo Fisher Scientific,TMO,$171.65 B,$444.77,2.46%,,🇺🇸 USA
+34,T-Mobile US,TMUS,$166.37 B,$143.86,1.62%,,🇺🇸 USA
+35,Comcast,CMCSA,$166.19 B,$41.29,2.08%,,🇺🇸 USA
+36,Abbott Laboratories,ABT,$164.07 B,$94.55,1.67%,,🇺🇸 USA
+37,AMD,AMD,$159.14 B,$98.50,2.41%,,🇺🇸 USA
+38,Nike,NKE,$156.40 B,$102.77,0.95%,,🇺🇸 USA
+39,Intel,INTC,$153.88 B,$36.50,2.27%,,🇺🇸 USA
+40,Walt Disney,DIS,$149.29 B,$81.59,1.13%,,🇺🇸 USA
+41,Verizon,VZ,$147.69 B,$35.13,1.47%,,🇺🇸 USA
+42,Wells Fargo,WFC,$144.68 B,$39.77,0.86%,,🇺🇸 USA
+43,ConocoPhillips,COP,$142.26 B,$118.80,0.56%,,🇺🇸 USA
+44,Danaher,DHR,$141.88 B,$192.02,3.74%,,🇺🇸 USA
+45,Intuit,INTU,$138.71 B,$494.95,1.53%,,🇺🇸 USA
+46,Philip Morris,PM,$138.41 B,$89.16,0.26%,,🇺🇸 USA
+47,Amgen,AMGN,$136.77 B,$255.70,2.85%,,🇺🇸 USA
+48,IBM,IBM,$132.07 B,$144.64,1.41%,,🇺🇸 USA
+49,Texas Instruments,TXN,$128.97 B,$142.01,1.07%,,🇺🇸 USA
+50,Union Pacific Corporation,UNP,$126.55 B,$207.61,0.88%,,🇺🇸 USA
+51,QUALCOMM,QCOM,$121.63 B,$108.99,1.08%,,🇺🇸 USA
+52,Honeywell,HON,$120.81 B,$183.26,1.95%,,🇺🇸 USA
+53,United Parcel Service,UPS,$120.69 B,$141.25,1.78%,,🇺🇸 USA
+54,ServiceNow,NOW,$119.31 B,$581.85,2.34%,,🇺🇸 USA
+55,General Electric,GE,$118.23 B,$108.63,1.07%,,🇺🇸 USA
+56,Nextera Energy,NEE,$117.98 B,$58.30,1.92%,,🇺🇸 USA
+57,Raytheon Technologies,RTX,$117.03 B,$81.39,3.59%,,🇺🇸 USA
+58,Caterpillar,CAT,$116.72 B,$226.05,6.65%,,🇺🇸 USA
+59,Morgan Stanley,MS,$116.28 B,$70.82,0.33%,,🇺🇸 USA
+60,Boeing,BA,$113.02 B,$186.82,2.45%,,🇺🇸 USA
+61,Lockheed Martin,LMT,$112.79 B,$454.64,1.97%,,🇺🇸 USA
+62,S&P Global,SPGI,$111.15 B,$349.31,1.23%,,🇺🇸 USA
+63,Applied Materials,AMAT,$110.71 B,$132.35,1.01%,,🇺🇸 USA
+64,AT&T,T,$110.11 B,$15.40,0.92%,,🇺🇸 USA
+65,Lowe's Companies,LOW,$109.98 B,$190.57,1.52%,,🇺🇸 USA
+66,American Express,AXP,$106.41 B,$146.03,1.93%,,🇺🇸 USA
+67,Elevance Health,ELV,$105.75 B,$450.09,0.46%,,🇺🇸 USA
+68,Starbucks,SBUX,$105.65 B,$92.24,0.98%,,🇺🇸 USA
+69,Deere & Company,DE,$105.22 B,$365.36,0.66%,,🇺🇸 USA
+70,Bristol-Myers Squibb,BMY,$104.85 B,$51.53,0.55%,,🇺🇸 USA
+71,Stryker Corporation,SYK,$102.62 B,$270.22,2.91%,,🇺🇸 USA
+72,TJX Companies,TJX,$100.75 B,$88.07,0.23%,,🇺🇸 USA
+73,Goldman Sachs,GS,$100.09 B,$303.61,0.92%,,🇺🇸 USA
+74,Booking Holdings (Booking.com),BKNG,$99.56 B,"$2,790",0.05%,,🇺🇸 USA
+75,Gilead Sciences,GILD,$97.86 B,$78.54,0.99%,,🇺🇸 USA
+76,Charles Schwab,SCHW,$94.77 B,$52.04,2.54%,,🇺🇸 USA
+77,Marsh & McLennan Companies,MMC,$93.51 B,$189.65,0.73%,,🇺🇸 USA
+78,Vertex Pharmaceuticals,VRTX,$93.45 B,$362.11,1.30%,,🇺🇸 USA
+79,Prologis,PLD,$93.09 B,$100.75,1.89%,,🇺🇸 USA
+80,Progressive,PGR,$92.49 B,$158.09,1.87%,,🇺🇸 USA
+81,Intuitive Surgical,ISRG,$92.32 B,$262.22,1.44%,,🇺🇸 USA
+82,Cigna,CI,$91.51 B,$309.20,1.30%,,🇺🇸 USA
+83,BlackRock,BLK,$91.16 B,$612.28,0.85%,,🇺🇸 USA
+84,Mondelez,MDLZ,$90.07 B,$66.21,0.35%,,🇺🇸 USA
+85,Automatic Data Processing,ADP,$89.84 B,$218.22,0.99%,,🇺🇸 USA
+86,CVS Health,CVS,$88.63 B,$69.01,1.47%,,🇺🇸 USA
+87,Uber,UBER,$88.44 B,$43.28,1.29%,,🇺🇸 USA
+88,Regeneron Pharmaceuticals,REGN,$84.66 B,$779.89,0.29%,,🇺🇸 USA
+89,American Tower,AMT,$83.06 B,$178.19,3.21%,,🇺🇸 USA
+90,Schlumberger,SLB,$79.50 B,$55.66,1.31%,,🇺🇸 USA
+91,Analog Devices,ADI,$78.39 B,$157.33,0.93%,,🇺🇸 USA
+92,Lam Research,LRCX,$77.52 B,$588.22,0.81%,,🇺🇸 USA
+93,CME Group,CME,$76.79 B,$213.46,1.01%,,🇺🇸 USA
+94,Citigroup,C,$75.57 B,$39.49,1.44%,,🇺🇸 USA
+95,"Palo Alto Networks
+",PANW,$75.53 B,$243.02,1.87%,,🇺🇸 USA
+96,Airbnb,ABNB,$75.47 B,$118.29,1.15%,,🇺🇸 USA
+97,Boston Scientific,BSX,$74.95 B,$51.19,2.28%,,🇺🇸 USA
+98,EOG Resources,EOG,$73.51 B,$126.25,0.64%,,🇺🇸 USA
+99,Micron Technology,MU,$73.42 B,$66.87,1.21%,,🇺🇸 USA
+100,Southern Company,SO,$73.39 B,$67.30,0.76%,,🇺🇸 USA
+101,Becton Dickinson,BDX,$73.33 B,$252.78,0.67%,,🇺🇸 USA
+102,Zoetis,ZTS,$72.26 B,$157.00,0.24%,,🇺🇸 USA
+103,Synopsys,SNPS,$71.39 B,$469.44,1.84%,,🇺🇸 USA
+104,Northrop Grumman,NOC,$71.08 B,$471.43,0.59%,,🇺🇸 USA
+105,Altria Group,MO,$71.04 B,$40.17,0.20%,,🇺🇸 USA
+106,Duke Energy,DUK,$68.50 B,$88.89,1.13%,,🇺🇸 USA
+107,Equinix,EQIX,$68.50 B,$729.64,2.00%,,🇺🇸 USA
+108,Fiserv,FI,$68.27 B,$113.75,0.72%,,🇺🇸 USA
+109,Illinois Tool Works ,ITW,$67.43 B,$224.12,0.24%,,🇺🇸 USA
+110,Blackstone Group,BX,$66.67 B,$92.35,0.03%,,🇺🇸 USA
+111,Waste Management,WM,$66.18 B,$164.33,0.97%,,🇺🇸 USA
+112,General Dynamics,GD,$65.85 B,$241.31,0.97%,,🇺🇸 USA
+113,Cadence Design Systems,CDNS,$65.25 B,$239.85,2.62%,,🇺🇸 USA
+114,Humana,HUM,$64.88 B,$523.69,1.10%,,🇺🇸 USA
+115,KLA,KLAC,$63.84 B,$469.70,2.21%,,🇺🇸 USA
+116,Vmware,VMW,$62.89 B,$145.65,0.66%,,🇺🇸 USA
+117,Air Products and Chemicals,APD,$62.74 B,$282.44,0.62%,,🇺🇸 USA
+118,Arista Networks,ANET,$62.03 B,$200.37,14.03%,,🇺🇸 USA
+119,KKR & Co.,KKR,$61.98 B,$55.40,0.62%,,🇺🇸 USA
+120,Colgate-Palmolive,CL,$61.85 B,$75.12,1.68%,,🇺🇸 USA
+121,McKesson,MCK,$61.42 B,$455.36,1.32%,,🇺🇸 USA
+122,Intercontinental Exchange,ICE,$61.36 B,$107.44,1.33%,,🇺🇸 USA
+123,Sherwin-Williams,SHW,$60.97 B,$238.21,1.19%,,🇺🇸 USA
+124,HCA Healthcare,HCA,$60.52 B,$226.14,1.25%,,🇺🇸 USA
+125,Marathon Petroleum,MPC,$60.47 B,$151.25,2.99%,,🇺🇸 USA
+126,FedEx,FDX,$60.36 B,$240.10,1.39%,,🇺🇸 USA
+127,Charter Communications,CHTR,$59.58 B,$402.80,3.34%,,🇺🇸 USA
+128,CSX Corporation,CSX,$58.98 B,$29.85,1.53%,,🇺🇸 USA
+129,PayPal,PYPL,$56.87 B,$51.80,1.47%,,🇺🇸 USA
+130,Enterprise Products,EPD,$56.55 B,$26.04,1.51%,,🇺🇸 USA
+131,Moody's,MCO,$56.36 B,$308.00,0.55%,,🇺🇸 USA
+132,Marriott International,MAR,$56.23 B,$188.56,0.25%,,🇺🇸 USA
+133,Pioneer Natural Resources,PXD,$55.72 B,$239.00,0.04%,,🇺🇸 USA
+134,O'Reilly Automotive,ORLY,$55.47 B,$930.44,0.03%,,🇺🇸 USA
+135,Workday,WDAY,$55.46 B,$211.71,2.18%,,🇺🇸 USA
+136,Southern Copper,SCCO,$54.81 B,$70.90,1.23%,,🇺🇸 USA
+137,Occidental Petroleum,OXY,$54.68 B,$61.81,0.23%,,🇺🇸 USA
+138,Monster Beverage,MNST,$53.52 B,$51.10,0.83%,,🇺🇸 USA
+139,Chipotle Mexican Grill,CMG,$53.30 B,"$1,942",1.72%,,🇺🇸 USA
+140,Roper Technologies,ROP,$52.13 B,$488.57,0.78%,,🇺🇸 USA
+141,Cintas,CTAS,$51.65 B,$507.12,0.86%,,🇺🇸 USA
+142,Target,TGT,$51.14 B,$110.79,1.95%,,🇺🇸 USA
+143,Emerson,EMR,$50.84 B,$88.97,0.59%,,🇺🇸 USA
+144,"Arthur J. Gallagher & Co.
+",AJG,$50.84 B,$235.49,0.75%,,🇺🇸 USA
+145,3M,MMM,$50.23 B,$90.95,1.60%,,🇺🇸 USA
+146,Phillips 66,PSX,$50.19 B,$114.07,1.45%,,🇺🇸 USA
+147,U.S. Bancorp,USB,$49.63 B,$31.88,1.82%,,🇺🇸 USA
+148,Freeport-McMoRan,FCX,$48.42 B,$33.78,0.76%,,🇺🇸 USA
+149,Dell,DELL,$48.40 B,$66.91,0.72%,,🇺🇸 USA
+150,Amphenol,APH,$48.19 B,$80.55,0.71%,,🇺🇸 USA
+151,Snowflake,SNOW,$47.84 B,$145.13,0.67%,,🇺🇸 USA
+152,Ecolab,ECL,$47.81 B,$167.74,5.40%,,🇺🇸 USA
+153,"Parker-Hannifin
+",PH,$47.40 B,$368.91,0.17%,,🇺🇸 USA
+154,"Republic Services
+",RSG,$46.72 B,$148.49,0.84%,,🇺🇸 USA
+155,"Motorola Solutions
+",MSI,$46.50 B,$278.46,0.81%,,🇺🇸 USA
+156,Aflac,AFL,$46.40 B,$78.11,0.92%,,🇺🇸 USA
+157,Estee Lauder,EL,$46.11 B,$128.87,0.70%,,🇺🇸 USA
+158,TransDigm,TDG,$45.69 B,$828.09,1.03%,,🇺🇸 USA
+159,PNC Financial Services,PNC,$45.59 B,$114.47,1.40%,,🇺🇸 USA
+160,MetLife,MET,$45.12 B,$60.01,0.99%,,🇺🇸 USA
+161,Fortinet,FTNT,$44.89 B,$57.17,1.51%,,🇺🇸 USA
+162,"Welltower
+",WELL,$44.81 B,$83.61,2.13%,,🇺🇸 USA
+163,Hess,HES,$44.35 B,$144.40,0.53%,,🇺🇸 USA
+164,Sempra Energy,SRE,$44.07 B,$70.03,0.78%,,🇺🇸 USA
+165,"Apollo Global Management
+",APO,$43.90 B,$77.44,3.39%,,🇺🇸 USA
+166,AutoZone,AZO,$43.80 B,"$2,477",0.30%,,🇺🇸 USA
+167,American International Group,AIG,$43.64 B,$61.31,0.51%,,🇺🇸 USA
+168,Valero Energy,VLO,$43.23 B,$127.00,2.22%,,🇺🇸 USA
+169,Paccar,PCAR,$43.17 B,$82.53,1.30%,,🇺🇸 USA
+170,Norfolk Southern,NSC,$43.14 B,$190.79,1.72%,,🇺🇸 USA
+171,Constellation Brands,STZ,$43.01 B,$234.15,0.02%,,🇺🇸 USA
+172,Keurig Dr Pepper,KDP,$42.41 B,$30.33,1.03%,,🇺🇸 USA
+173,Autodesk,ADSK,$42.24 B,$197.63,0.08%,,🇺🇸 USA
+174,CrowdStrike,CRWD,$42.21 B,$176.77,1.24%,,🇺🇸 USA
+175,Public Storage,PSA,$42.09 B,$238.71,0.05%,,🇺🇸 USA
+176,"Williams Companies
+",WMB,$41.84 B,$34.40,0.50%,,🇺🇸 USA
+177,"Copart
+",CPRT,$41.78 B,$43.52,0.93%,,🇺🇸 USA
+178,"Pacific Gas and Electric
+",PCG,$41.45 B,$16.30,0.62%,,🇺🇸 USA
+179,"Energy Transfer Partners
+",ET,$41.35 B,$13.15,0.00%,,🇺🇸 USA
+180,Simon Property Group,SPG,$41.22 B,$109.89,4.33%,,🇺🇸 USA
+181,"Old Dominion Freight Line
+",ODFL,$41.15 B,$376.66,0.65%,,🇺🇸 USA
+182,Marvell Technology Group,MRVL,$40.74 B,$47.22,0.83%,,🇺🇸 USA
+183,Kimberly-Clark,KMB,$40.43 B,$119.64,0.10%,,🇺🇸 USA
+184,Crown Castle,CCI,$40.32 B,$92.98,3.10%,,🇺🇸 USA
+185,Paychex,PAYX,$40.11 B,$111.05,0.43%,,🇺🇸 USA
+186,"Cheniere Energy
+",LNG,$40.04 B,$166.42,0.26%,,🇺🇸 USA
+187,Carrier,CARR,$39.98 B,$47.66,0.61%,,🇺🇸 USA
+188,"Seagen
+",SGEN,$39.94 B,$212.81,0.63%,,🇺🇸 USA
+189,Ross Stores,ROST,$39.27 B,$115.97,1.11%,,🇺🇸 USA
+190,Ford,F,$39.02 B,$9.75,1.35%,,🇺🇸 USA
+191,American Electric Power,AEP,$38.91 B,$75.54,0.17%,,🇺🇸 USA
+192,Hilton Worldwide,HLT,$38.85 B,$151.53,0.17%,,🇺🇸 USA
+193,Microchip Technology,MCHP,$38.80 B,$71.29,0.89%,,🇺🇸 USA
+194,Exelon Corporation,EXC,$38.75 B,$38.94,1.27%,,🇺🇸 USA
+195,Edwards Lifesciences,EW,$38.64 B,$63.72,2.18%,,🇺🇸 USA
+196,Kraft Heinz,KHC,$38.64 B,$31.46,0.51%,,🇺🇸 USA
+197,General Motors,GM,$38.61 B,$28.20,3.07%,,🇺🇸 USA
+198,Capital One,COF,$38.59 B,$101.29,0.75%,,🇺🇸 USA
+199,Digital Realty,DLR,$38.46 B,$124.36,1.87%,,🇺🇸 USA
+200,The Hershey Company,HSY,$38.31 B,$187.35,0.74%,,🇺🇸 USA
+201,The Travelers Companies,TRV,$38.24 B,$167.44,1.17%,,🇺🇸 USA
+202,"Archer Daniels Midland (ADM)
+",ADM,$38.17 B,$71.57,0.21%,,🇺🇸 USA
+203,Oneok,OKE,$37.98 B,$65.20,0.84%,,🇺🇸 USA
+204,General Mills,GIS,$37.92 B,$65.24,0.63%,,🇺🇸 USA
+205,Truist Financial,TFC,$37.82 B,$28.36,0.64%,,🇺🇸 USA
+206,MSCI,MSCI,$37.29 B,$471.55,2.17%,,🇺🇸 USA
+207,Centene,CNC,$36.84 B,$68.98,1.50%,,🇺🇸 USA
+208,"Nucor
+",NUE,$36.75 B,$147.79,0.78%,,🇺🇸 USA
+209,Constellation Energy,CEG,$36.31 B,$112.92,0.10%,,🇺🇸 USA
+210,Las Vegas Sands,LVS,$36.28 B,$47.46,0.75%,,🇺🇸 USA
+211,"W. W. Grainger
+",GWW,$36.22 B,$729.83,0.52%,,🇺🇸 USA
+212,"AmerisourceBergen
+",ABC,$36.14 B,$179.98,0.23%,,🇺🇸 USA
+213,MPLX,MPLX,$36.08 B,$36.04,0.28%,,🇺🇸 USA
+214,Kinder Morgan,KMI,$36.00 B,$16.20,0.43%,,🇺🇸 USA
+215,Kenvue,KVUE,$35.61 B,$18.60,0.21%,,🇺🇸 USA
+216,"D. R. Horton
+",DHI,$35.31 B,$104.40,2.22%,,🇺🇸 USA
+217,Halliburton,HAL,$35.21 B,$39.34,0.20%,,🇺🇸 USA
+218,"Baker Hughes
+",BKR,$34.87 B,$34.42,1.54%,,🇺🇸 USA
+219,"The Trade Desk
+",TTD,$34.78 B,$70.96,4.43%,,🇺🇸 USA
+220,Biogen,BIIB,$34.40 B,$237.54,0.14%,,🇺🇸 USA
+221,"Corteva
+",CTVA,$34.16 B,$48.14,0.17%,,🇺🇸 USA
+222,L3Harris Technologies,LHX,$34.00 B,$179.41,2.90%,,🇺🇸 USA
+223,Dow,DOW,$33.90 B,$48.34,0.00%,,🇺🇸 USA
+224,Yum! Brands,YUM,$33.86 B,$120.86,0.83%,,🇺🇸 USA
+225,Dominion Energy,D,$33.73 B,$40.32,0.80%,,🇺🇸 USA
+226,Realty Income,O,$33.58 B,$47.38,3.08%,,🇺🇸 USA
+227,Electronic Arts,EA,$33.53 B,$123.79,2.04%,,🇺🇸 USA
+228,Sysco,SYY,$33.52 B,$66.49,1.45%,,🇺🇸 USA
+229,Allstate,ALL,$33.51 B,$128.13,2.12%,,🇺🇸 USA
+230,Dupont De Nemours,DD,$33.45 B,$72.88,0.01%,,🇺🇸 USA
+231,"Interactive Brokers
+",IBKR,$33.37 B,$80.07,0.19%,,🇺🇸 USA
+232,Waste Connections,WCN,$33.36 B,$129.50,0.28%,,🇺🇸 USA
+233,Fastenal,FAST,$33.33 B,$58.34,0.19%,,🇺🇸 USA
+234,Prudential Financial,PRU,$33.19 B,$91.44,0.84%,,🇺🇸 USA
+235,IDEXX Laboratories,IDXX,$33.16 B,$399.47,0.78%,,🇺🇸 USA
+236,IQVIA,IQV,$33.11 B,$180.83,2.07%,,🇺🇸 USA
+237,Bank of New York Mellon,BK,$33.09 B,$42.50,0.38%,,🇺🇸 USA
+238,Verisk Analytics,VRSK,$32.97 B,$227.36,1.28%,,🇺🇸 USA
+239,Xcel Energy,XEL,$32.70 B,$59.27,0.90%,,🇺🇸 USA
+240,Kroger,KR,$32.63 B,$45.37,0.93%,,🇺🇸 USA
+241,Cognizant Technology Solutions ,CTSH,$32.55 B,$64.47,1.13%,,🇺🇸 USA
+242,Ametek,AME,$32.47 B,$140.77,0.46%,,🇺🇸 USA
+243,"Ameriprise Financial
+",AMP,$31.89 B,$314.57,0.40%,,🇺🇸 USA
+244,Palantir,PLTR,$31.84 B,$14.80,0.75%,,🇺🇸 USA
+245,Otis Worldwide,OTIS,$31.59 B,$77.21,0.88%,,🇺🇸 USA
+246,Veeva Systems,VEEV,$30.96 B,$192.71,1.28%,,🇺🇸 USA
+247,PSEG,PEG,$30.77 B,$61.65,2.48%,,🇺🇸 USA
+248,"Cummins
+",CMI,$30.63 B,$216.30,0.62%,,🇺🇸 USA
+249,Consolidated Edison,ED,$30.28 B,$87.79,0.35%,,🇺🇸 USA
+250,GE HealthCare Technologies,GEHC,$30.27 B,$66.57,5.38%,,🇺🇸 USA
+251,Agilent Technologies,A,$30.24 B,$103.37,2.17%,,🇺🇸 USA
+252,"Rockwell Automation
+",ROK,$30.18 B,$262.81,0.25%,,🇺🇸 USA
+253,Lennar,LEN,$30.05 B,$106.68,2.07%,,🇺🇸 USA
+254,"Ares Management
+",ARES,$30.02 B,$98.59,2.79%,,🇺🇸 USA
+255,CoStar Group,CSGP,$29.97 B,$73.41,3.70%,,🇺🇸 USA
+256,"Devon Energy
+",DVN,$29.83 B,$46.57,0.87%,,🇺🇸 USA
+257,Newmont,NEM,$29.78 B,$37.47,3.18%,,🇺🇸 USA
+258,DoorDash,DASH,$29.47 B,$74.95,2.38%,,🇺🇸 USA
+259,LyondellBasell,LYB,$29.27 B,$90.24,0.40%,,🇺🇸 USA
+260,Fidelity National Information Services,FIS,$29.09 B,$49.11,1.45%,,🇺🇸 USA
+261,"PPG Industries
+",PPG,$28.94 B,$122.77,0.78%,,🇺🇸 USA
+262,"Moderna
+",MRNA,$28.90 B,$75.96,2.55%,,🇺🇸 USA
+263,"VICI Properties
+",VICI,$28.86 B,$27.90,2.65%,,🇺🇸 USA
+264,"Diamondback Energy
+",FANG,$28.66 B,$160.32,1.19%,,🇺🇸 USA
+265,Global Payments,GPN,$27.61 B,$106.22,2.33%,,🇺🇸 USA
+266,"United Rentals
+",URI,$27.53 B,$406.27,1.14%,,🇺🇸 USA
+267,GlobalFoundries,GFS,$27.42 B,$49.62,0.58%,,🇺🇸 USA
+268,Brown Forman,BF-A,$27.13 B,$57.42,1.32%,,🇺🇸 USA
+269,"Cheniere Energy
+",CQP,$26.98 B,$55.76,1.60%,,🇺🇸 USA
+270,ON Semiconductor,ON,$26.97 B,$62.64,4.13%,,🇺🇸 USA
+271,CDW Corporation,CDW,$26.86 B,$200.40,1.70%,,🇺🇸 USA
+272,Datadog,DDOG,$26.47 B,$81.47,1.32%,,🇺🇸 USA
+273,Gartner,IT,$26.17 B,$332.04,0.72%,,🇺🇸 USA
+274,Dollar General,DG,$26.12 B,$119.04,0.74%,,🇺🇸 USA
+275,Vulcan Materials,VMC,$26.10 B,$196.49,0.26%,,🇺🇸 USA
+276,HP,HPQ,$26.02 B,$26.33,0.65%,,🇺🇸 USA
+277,WEC Energy Group,WEC,$25.67 B,$81.39,0.26%,,🇺🇸 USA
+278,Martin Marietta,MLM,$25.27 B,$408.94,0.95%,,🇺🇸 USA
+279,Splunk,SPLK,$24.80 B,$147.16,0.03%,,🇺🇸 USA
+280,MongoDB,MDB,$24.58 B,$344.59,2.47%,,🇺🇸 USA
+281,Block,SQ,$24.55 B,$40.25,2.63%,,🇺🇸 USA
+282,Dollar Tree,DLTR,$24.44 B,$111.09,1.13%,,🇺🇸 USA
+283,Nasdaq,NDAQ,$24.36 B,$49.60,1.41%,,🇺🇸 USA
+284,"Quanta Services
+",PWR,$24.26 B,$167.12,1.43%,,🇺🇸 USA
+285,"Edison International
+",EIX,$24.17 B,$63.06,0.57%,,🇺🇸 USA
+286,Ansys,ANSS,$24.15 B,$278.26,1.13%,,🇺🇸 USA
+287,Warner Bros. Discovery,WBD,$23.92 B,$9.94,0.91%,,🇺🇸 USA
+288,West Pharmaceutical,WST,$23.55 B,$318.29,0.49%,,🇺🇸 USA
+289,AvalonBay Communities,AVB,$23.53 B,$165.74,1.90%,,🇺🇸 USA
+290,Zscaler,ZS,$23.35 B,$158.69,1.20%,,🇺🇸 USA
+291,Fortive,FTV,$22.94 B,$65.28,0.37%,,🇺🇸 USA
+292,American Water Works,AWK,$22.90 B,$117.65,0.81%,,🇺🇸 USA
+293,Corning,GLW,$22.83 B,$26.76,0.38%,,🇺🇸 USA
+294,"Take 2 Interactive
+",TTWO,$22.71 B,$133.75,0.30%,,🇺🇸 USA
+295,"Extra Space Storage
+",EXR,$22.63 B,$103.59,0.33%,,🇺🇸 USA
+296,SBA Communications,SBAC,$22.61 B,$208.63,1.82%,,🇺🇸 USA
+297,Xylem,XYL,$22.52 B,$93.54,4.78%,,🇺🇸 USA
+298,Cardinal Health,CAH,$22.41 B,$91.00,0.04%,,🇺🇸 USA
+299,"Church & Dwight
+",CHD,$22.37 B,$90.94,0.20%,,🇺🇸 USA
+300,The Hartford,HIG,$22.09 B,$73.45,1.12%,,🇺🇸 USA
+301,Zimmer Biomet,ZBH,$21.81 B,$104.41,0.97%,,🇺🇸 USA
+302,Royal Caribbean,RCL,$21.71 B,$84.73,1.32%,,🇺🇸 USA
+303,Keysight,KEYS,$21.67 B,$122.05,1.93%,,🇺🇸 USA
+304,"Mettler-Toledo
+",MTD,$21.54 B,$985.20,2.37%,,🇺🇸 USA
+305,HubSpot,HUBS,$21.19 B,$423.77,1.96%,,🇺🇸 USA
+306,Monolithic Power Systems,MPWR,$21.16 B,$441.74,9.34%,,🇺🇸 USA
+307,"CBRE Group
+",CBRE,$21.13 B,$69.34,2.73%,,🇺🇸 USA
+308,Tradeweb,TW,$21.12 B,$90.01,1.37%,,🇺🇸 USA
+309,FICO,FICO,$21.02 B,$845.87,0.64%,,🇺🇸 USA
+310,"Equity Residential
+",EQR,$21.01 B,$55.33,1.60%,,🇺🇸 USA
+311,Tractor Supply,TSCO,$20.95 B,$192.56,0.72%,,🇺🇸 USA
+312,"Weyerhaeuser
+",WY,$20.94 B,$28.69,0.49%,,🇺🇸 USA
+313,Equifax,EFX,$20.89 B,$169.57,3.38%,,🇺🇸 USA
+314,eBay,EBAY,$20.87 B,$39.23,1.53%,,🇺🇸 USA
+315,ResMed,RMD,$20.77 B,$141.22,2.74%,,🇺🇸 USA
+316,Coterra Energy,CTRA,$20.76 B,$27.50,0.62%,,🇺🇸 USA
+317,Discover Financial Services,DFS,$20.52 B,$82.08,1.16%,,🇺🇸 USA
+318,FirstEnergy,FE,$20.42 B,$35.60,0.56%,,🇺🇸 USA
+319,VeriSign,VRSN,$20.38 B,$199.66,0.77%,,🇺🇸 USA
+320,"T. Rowe Price
+",TROW,$20.22 B,$90.50,0.53%,,🇺🇸 USA
+321,Entergy,ETR,$20.21 B,$95.59,0.87%,,🇺🇸 USA
+322,Pinterest,PINS,$20.14 B,$29.88,19.04%,,🇺🇸 USA
+323,Delta Air Lines,DAL,$20.10 B,$31.25,0.06%,,🇺🇸 USA
+324,"Broadridge Financial Solutions
+",BR,$20.07 B,$170.64,0.69%,,🇺🇸 USA
+325,"State Street Corporation
+",STT,$19.94 B,$64.63,1.17%,,🇺🇸 USA
+326,Raymond James,RJF,$19.93 B,$95.44,0.05%,,🇺🇸 USA
+327,"First Citizens BancShares
+",FCNCA,$19.90 B,"$1,381",0.58%,,🇺🇸 USA
+328,"Ameren
+",AEE,$19.89 B,$75.71,0.89%,,🇺🇸 USA
+329,"DTE Energy
+",DTE,$19.87 B,$96.38,0.07%,,🇺🇸 USA
+330,"Brown & Brown
+",BRO,$19.75 B,$69.42,0.99%,,🇺🇸 USA
+331,Hewlett Packard Enterprise,HPE,$19.73 B,$15.38,0.52%,,🇺🇸 USA
+332,Roblox,RBLX,$19.61 B,$31.81,0.22%,,🇺🇸 USA
+333,Markel,MKL,$19.50 B,"$1,471",0.91%,,🇺🇸 USA
+334,"Molina Healthcare
+",MOH,$19.41 B,$332.95,1.52%,,🇺🇸 USA
+335,HEICO,HEI,$19.27 B,$158.41,0.98%,,🇺🇸 USA
+336,Wabtec,WAB,$18.99 B,$106.02,0.45%,,🇺🇸 USA
+337,"Alnylam Pharmaceuticals
+",ALNY,$18.97 B,$151.80,0.26%,,🇺🇸 USA
+338,Cloudflare,NET,$18.94 B,$56.69,1.45%,,🇺🇸 USA
+339,Symbotic,SYM,$18.91 B,$34.03,4.52%,,🇺🇸 USA
+340,Eversource Energy,ES,$18.77 B,$53.79,0.75%,,🇺🇸 USA
+341,"ULTA Beauty
+",ULTA,$18.77 B,$381.31,0.55%,,🇺🇸 USA
+342,M&T Bank,MTB,$18.71 B,$112.75,0.63%,,🇺🇸 USA
+343,"Targa Resources
+",TRGP,$18.70 B,$83.61,0.01%,,🇺🇸 USA
+344,"Live Nation
+",LYV,$18.41 B,$80.02,1.81%,,🇺🇸 USA
+345,Coinbase,COIN,$18.29 B,$77.12,4.78%,,🇺🇸 USA
+346,"Invitation Homes
+",INVH,$18.24 B,$29.69,1.43%,,🇺🇸 USA
+347,Walgreens Boots Alliance,WBA,$18.21 B,$21.08,0.09%,,🇺🇸 USA
+348,Rollins,ROL,$18.20 B,$37.61,2.06%,,🇺🇸 USA
+349,Dover,DOV,$18.17 B,$129.95,1.19%,,🇺🇸 USA
+350,"Howmet Aerospace
+",HWM,$18.17 B,$44.10,1.15%,,🇺🇸 USA
+351,PPL,PPL,$18.11 B,$24.57,0.74%,,🇺🇸 USA
+352,"Genuine Parts Company
+",GPC,$18.06 B,$128.86,1.05%,,🇺🇸 USA
+353,Zoom,ZM,$18.05 B,$59.98,0.03%,,🇺🇸 USA
+354,Hormel Foods,HRL,$17.78 B,$32.55,1.53%,,🇺🇸 USA
+355,"J. B. Hunt
+",JBHT,$17.72 B,$171.87,1.27%,,🇺🇸 USA
+356,Teledyne,TDY,$17.67 B,$374.59,0.60%,,🇺🇸 USA
+357,"Steel Dynamics
+",STLD,$17.64 B,$106.51,1.84%,,🇺🇸 USA
+358,"Darden Restaurants
+",DRI,$17.50 B,$145.53,1.52%,,🇺🇸 USA
+359,"International Flavors & Fragrances
+",IFF,$17.44 B,$68.35,4.73%,,🇺🇸 USA
+360,"EQT Corporation
+",EQT,$17.43 B,$42.38,2.91%,,🇺🇸 USA
+361,NVR,NVR,$17.37 B,"$5,413",0.20%,,🇺🇸 USA
+362,W. R. Berkley,WRB,$17.36 B,$67.42,1.06%,,🇺🇸 USA
+363,Blue Owl Capital,OWL,$17.35 B,$12.33,0.33%,,🇺🇸 USA
+364,Illumina,ILMN,$17.32 B,$109.42,1.44%,,🇺🇸 USA
+365,Cboe,CBOE,$17.29 B,$163.89,0.24%,,🇺🇸 USA
+366,Kellogg's,K,$17.27 B,$50.47,0.54%,,🇺🇸 USA
+367,Iron Mountain,IRM,$17.23 B,$59.07,1.34%,,🇺🇸 USA
+368,Abiomed,ABMD,$17.18 B,$381.02,0.00%,,🇺🇸 USA
+369,"McCormick & Company
+",MKC,$17.15 B,$63.90,0.19%,,🇺🇸 USA
+370,Ventas,VTR,$17.08 B,$42.46,2.19%,,🇺🇸 USA
+371,"LPL Financial
+",LPLA,$16.97 B,$224.52,0.55%,,🇺🇸 USA
+372,"CenterPoint Energy
+",CNP,$16.96 B,$26.88,0.04%,,🇺🇸 USA
+373,LabCorp,LH,$16.95 B,$199.73,0.79%,,🇺🇸 USA
+374,Jacobs Engineering,J,$16.78 B,$133.30,1.60%,,🇺🇸 USA
+375,PTC,PTC,$16.68 B,$140.42,0.73%,,🇺🇸 USA
+376,Fleetcor,FLT,$16.65 B,$225.17,1.17%,,🇺🇸 USA
+377,"Marathon Oil
+",MRO,$16.54 B,$27.31,0.55%,,🇺🇸 USA
+378,Snap,SNAP,$16.48 B,$10.01,3.20%,,🇺🇸 USA
+379,"Tyson Foods
+",TSN,$16.48 B,$46.35,0.17%,,🇺🇸 USA
+380,Sirius XM,SIRI,$16.44 B,$4.28,2.39%,,🇺🇸 USA
+381,Baxter,BAX,$16.42 B,$32.43,1.22%,,🇺🇸 USA
+382,FactSet,FDS,$16.40 B,$431.89,1.09%,,🇺🇸 USA
+383,Principal,PFG,$16.22 B,$67.68,0.10%,,🇺🇸 USA
+384,Hologic,HOLX,$16.20 B,$66.17,1.32%,,🇺🇸 USA
+385,"Alexandria Real Estate Equities
+",ARE,$16.18 B,$93.13,0.11%,,🇺🇸 USA
+386,Expeditors,EXPD,$16.15 B,$109.25,0.25%,,🇺🇸 USA
+387,"Warner Music Group
+",WMG,$16.15 B,$31.30,0.38%,,🇺🇸 USA
+388,"Fifth Third Bank
+",FITB,$16.14 B,$23.71,1.41%,,🇺🇸 USA
+389,Atmos Energy,ATO,$15.98 B,$107.66,1.15%,,🇺🇸 USA
+390,PulteGroup,PHM,$15.86 B,$73.59,1.88%,,🇺🇸 USA
+391,"CMS Energy
+",CMS,$15.85 B,$54.34,0.46%,,🇺🇸 USA
+392,Jabil,JBL,$15.71 B,$122.80,1.98%,,🇺🇸 USA
+393,"Tyler Technologies
+",TYL,$15.69 B,$372.90,1.39%,,🇺🇸 USA
+394,"Akamai
+",AKAM,$15.67 B,$103.33,0.74%,,🇺🇸 USA
+395,"Cincinnati Financial
+",CINF,$15.63 B,$99.67,0.63%,,🇺🇸 USA
+396,"Booz Allen Hamilton
+",BAH,$15.63 B,$119.93,1.76%,,🇺🇸 USA
+397,Deckers Brands,DECK,$15.60 B,$597.06,2.14%,,🇺🇸 USA
+398,Cooper Companies,COO,$15.43 B,$311.75,0.71%,,🇺🇸 USA
+399,Bunge,BG,$15.39 B,$105.98,0.45%,,🇺🇸 USA
+400,"CF Industries
+",CF,$15.39 B,$79.78,1.79%,,🇺🇸 USA
+401,Rivian,RIVN,$15.37 B,$16.22,3.18%,,🇺🇸 USA
+402,BioMarin Pharmaceutical,BMRN,$15.32 B,$81.45,0.58%,,🇺🇸 USA
+403,"Axon Enterprise
+",AXON,$15.28 B,$204.49,1.37%,,🇺🇸 USA
+404,"First Solar
+",FSLR,$15.21 B,$142.45,4.50%,,🇺🇸 USA
+405,"NetApp
+",NTAP,$15.19 B,$72.78,2.25%,,🇺🇸 USA
+406,"Ball Corporation
+",BALL,$15.17 B,$48.15,0.50%,,🇺🇸 USA
+407,"UWM Holdings
+",UWMC,$15.02 B,$4.85,0.41%,,🇺🇸 USA
+408,Formula One Group,FWONK,$14.98 B,$64.69,0.93%,,🇺🇸 USA
+409,"Vertiv Holdings
+",VRT,$14.97 B,$39.27,2.59%,,🇺🇸 USA
+410,Carnival Corporation,CCL,$14.96 B,$11.46,0.53%,,🇺🇸 USA
+411,Textron,TXT,$14.89 B,$76.00,0.26%,,🇺🇸 USA
+412,Albemarle,ALB,$14.87 B,$126.78,0.49%,,🇺🇸 USA
+413,Omnicom,OMC,$14.82 B,$74.91,0.52%,,🇺🇸 USA
+414,"Reliance Steel & Aluminum
+",RS,$14.77 B,$254.38,0.68%,,🇺🇸 USA
+415,"Westlake Chemical
+",WLK,$14.72 B,$115.36,0.18%,,🇺🇸 USA
+416,"Rocket Companies
+",RKT,$14.68 B,$7.39,1.09%,,🇺🇸 USA
+417,"Quest Diagnostics
+",DGX,$14.62 B,$130.10,0.53%,,🇺🇸 USA
+418,Clorox,CLX,$14.59 B,$117.70,0.99%,,🇺🇸 USA
+419,Best Buy,BBY,$14.54 B,$66.82,3.61%,,🇺🇸 USA
+420,Hubbell,HUBB,$14.48 B,$270.10,4.67%,,🇺🇸 USA
+421,IDEX,IEX,$14.47 B,$191.41,0.46%,,🇺🇸 USA
+422,Erie Indemnity,ERIE,$14.44 B,$276.19,0.70%,,🇺🇸 USA
+423,"Sun Communities
+",SUI,$14.43 B,$111.24,1.39%,,🇺🇸 USA
+424,"Bentley Systems
+",BSY,$14.34 B,$48.64,0.39%,,🇺🇸 USA
+425,"Loews Corporation
+",L,$14.29 B,$64.01,1.72%,,🇺🇸 USA
+426,"Essex Property Trust
+",ESS,$14.21 B,$213.92,1.85%,,🇺🇸 USA
+427,"Paycom
+",PAYC,$14.19 B,$244.97,2.05%,,🇺🇸 USA
+428,Fox Corporation,FOX,$14.18 B,$27.91,2.53%,,🇺🇸 USA
+429,"Texas Pacific Land Trust
+",TPL,$14.17 B,"$1,846",0.52%,,🇺🇸 USA
+430,Mid-America Apartment Communities,MAA,$14.15 B,$118.15,0.54%,,🇺🇸 USA
+431,"Align Technology
+",ALGN,$14.12 B,$184.59,1.15%,,🇺🇸 USA
+432,Waters Corporation,WAT,$14.09 B,$238.53,0.77%,,🇺🇸 USA
+433,"Avery Dennison
+",AVY,$14.02 B,$174.07,0.83%,,🇺🇸 USA
+434,"Huntington Bancshares
+",HBAN,$13.97 B,$9.65,0.94%,,🇺🇸 USA
+435,"Magellan Midstream Partners
+",MMP,$13.94 B,$69.00,0.67%,,🇺🇸 USA
+436,"Watsco
+",WSO,$13.87 B,$348.89,0.75%,,🇺🇸 USA
+437,"Skyworks Solutions
+",SWKS,$13.82 B,$86.74,0.34%,,🇺🇸 USA
+438,"Packaging Corporation of America
+",PKG,$13.76 B,$153.05,0.89%,,🇺🇸 USA
+439,Expedia Group,EXPE,$13.66 B,$95.29,0.36%,,🇺🇸 USA
+440,"Northern Trust
+",NTRS,$13.64 B,$65.91,1.21%,,🇺🇸 USA
+441,"Regions Financial
+",RF,$13.64 B,$14.53,2.18%,,🇺🇸 USA
+442,Leidos,LDOS,$13.61 B,$99.12,7.99%,,🇺🇸 USA
+443,Snap-on,SNA,$13.61 B,$257.94,1.36%,,🇺🇸 USA
+444,"Builders FirstSource
+",BLDR,$13.56 B,$108.52,1.18%,,🇺🇸 USA
+445,"AMH (American Homes 4 Rent)
+",AMH,$13.53 B,$32.74,1.68%,,🇺🇸 USA
+446,Southwest Airlines,LUV,$13.25 B,$22.23,1.24%,,🇺🇸 USA
+447,Entegris,ENTG,$13.21 B,$88.04,0.57%,,🇺🇸 USA
+448,Lennox,LII,$13.16 B,$370.54,1.41%,,🇺🇸 USA
+449,Dynatrace,DT,$13.11 B,$44.71,1.68%,,🇺🇸 USA
+450,Ovintiv,OVV,$13.09 B,$48.00,1.03%,,🇺🇸 USA
+451,"Conagra Brands
+",CAG,$13.07 B,$27.36,0.48%,,🇺🇸 USA
+452,"Stanley Black & Decker
+",SWK,$13.03 B,$85.05,0.96%,,🇺🇸 USA
+453,Lamb Weston,LW,$13.01 B,$89.80,0.31%,,🇺🇸 USA
+454,Western Digital,WDC,$13.01 B,$40.15,3.95%,,🇺🇸 USA
+455,Equity LifeStyle Properties,ELS,$12.86 B,$65.80,0.14%,,🇺🇸 USA
+456,Teradyne,TER,$12.82 B,$83.27,0.23%,,🇺🇸 USA
+457,DraftKings,DKNG,$12.81 B,$27.62,2.60%,,🇺🇸 USA
+458,Corebridge Financial,CRBG,$12.71 B,$20.00,0.65%,,🇺🇸 USA
+459,AppLovin,APP,$12.67 B,$36.44,0.79%,,🇺🇸 USA
+460,Supermicro,SMCI,$12.66 B,$239.47,1.20%,,🇺🇸 USA
+461,"EPAM Systems
+",EPAM,$12.61 B,$217.57,2.27%,,🇺🇸 USA
+462,Graco,GGG,$12.54 B,$74.35,0.03%,,🇺🇸 USA
+463,Molson Coors,TAP,$12.50 B,$57.77,1.28%,,🇺🇸 USA
+464,Albertsons,ACI,$12.49 B,$21.70,0.09%,,🇺🇸 USA
+465,"SS&C Technologies
+",SSNC,$12.46 B,$50.25,0.46%,,🇺🇸 USA
+466,Celanese,CE,$12.46 B,$114.51,0.20%,,🇺🇸 USA
+467,"Carlisle Companies
+",CSL,$12.36 B,$254.09,0.35%,,🇺🇸 USA
+468,Samsara,IOT,$12.34 B,$23.07,0.52%,,🇺🇸 USA
+469,Alliant Energy,LNT,$12.33 B,$48.79,0.64%,,🇺🇸 USA
+470,"MGM Resorts
+",MGM,$12.25 B,$34.92,0.26%,,🇺🇸 USA
+471,POOLCORP,POOL,$12.21 B,$315.77,0.27%,,🇺🇸 USA
+472,Apache Corporation,APA,$12.20 B,$39.72,0.10%,,🇺🇸 USA
+473,Liberty Broadband,LBRDA,$12.17 B,$83.32,2.89%,,🇺🇸 USA
+474,Nordson,NDSN,$12.12 B,$212.59,0.20%,,🇺🇸 USA
+475,"Gaming and Leisure Properties
+",GLPI,$12.11 B,$45.39,2.76%,,🇺🇸 USA
+476,Incyte,INCY,$12.08 B,$53.93,3.39%,,🇺🇸 USA
+477,Legend Biotech,LEGN,$12.04 B,$66.07,0.66%,,🇺🇸 USA
+478,Campbell Soup,CPB,$12.02 B,$40.41,0.02%,,🇺🇸 USA
+479,Vistra,VST,$12.02 B,$32.72,0.43%,,🇺🇸 USA
+480,"Manhattan Associates
+",MANH,$12.00 B,$194.98,3.02%,,🇺🇸 USA
+481,News Corp,NWS,$11.93 B,$21.44,0.37%,,🇺🇸 USA
+482,Black Knight,BKI,$11.87 B,$75.76,0.00%,,🇺🇸 USA
+483,Domino's Pizza,DPZ,$11.82 B,$338.99,0.08%,,🇺🇸 USA
+484,Avantor,AVTR,$11.78 B,$17.43,1.63%,,🇺🇸 USA
+485,"RPM International
+",RPM,$11.75 B,$91.27,0.67%,,🇺🇸 USA
+486,LKQ Corporation,LKQ,$11.75 B,$43.92,1.22%,,🇺🇸 USA
+487,Trimble,TRMB,$11.70 B,$47.13,1.66%,,🇺🇸 USA
+488,"Celsius Holdings
+",CELH,$11.69 B,$152.09,5.56%,,🇺🇸 USA
+489,Masco,MAS,$11.69 B,$52.09,0.50%,,🇺🇸 USA
+490,"International Paper
+",IP,$11.67 B,$33.73,1.02%,,🇺🇸 USA
+491,J.M. Smucker Company,SJM,$11.62 B,$113.84,0.17%,,🇺🇸 USA
+492,Synchrony,SYF,$11.60 B,$28.05,0.11%,,🇺🇸 USA
+493,Avangrid,AGR,$11.55 B,$29.87,2.43%,,🇺🇸 USA
+494,"United Airlines Holdings
+",UAL,$11.48 B,$35.01,0.60%,,🇺🇸 USA
+495,W. P. Carey,WPC,$11.47 B,$53.65,1.71%,,🇺🇸 USA
+496,"Chesapeake Energy
+",CHK,$11.39 B,$86.08,0.56%,,🇺🇸 USA
+497,Franklin Resources,BEN,$11.37 B,$22.79,1.24%,,🇺🇸 USA
+498,ZoomInfo,ZI,$11.34 B,$12.96,16.44%,,🇺🇸 USA
+499,AspenTech,AZPN,$11.33 B,$177.75,0.61%,,🇺🇸 USA
