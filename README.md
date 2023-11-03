@@ -28,3 +28,8 @@ From the logistic regression we quickly realized that we dont have remotely enou
 
 Visualizations
 If you've included visualizations in the repo, mention them here, or you can embed some key plots directly in the README.
+![Comparing 2 Stocks TSLA and T](image.png)
+
+![Top 5 Most Volatile Stocks](image-1.png)
+
+![Dashboard Preview](image-2.png)
