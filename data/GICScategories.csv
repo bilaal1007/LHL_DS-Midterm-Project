@@ -1,0 +1,134 @@
+symbol,GICSsector,company_name
+AAPL,Information Technology,Apple Inc.
+MSFT,Information Technology,Microsoft Corporation
+GOOG,Communication Services,Alphabet Inc.
+AMZN,Consumer Discretionary,Amazon.com Inc.
+NVDA,Information Technology,NVIDIA Corporation
+META,Communication Services,Meta Platforms Inc.
+TSLA,Consumer Discretionary,"Tesla, Inc."
+LLY,Health Care,Eli Lilly and Company
+UNH,Health Care,UnitedHealth Group Incorporated
+V,Information Technology,Visa Inc.
+WMT,Consumer Staples,Walmart Inc.
+XOM,Energy,Exxon Mobil Corporation
+JPM,Financials,JPMorgan Chase & Co.
+JNJ,Health Care,Johnson & Johnson
+PG,Consumer Staples,Procter & Gamble Company
+MA,Information Technology,Mastercard Incorporated
+AVGO,Information Technology,Broadcom Inc.
+HD,Consumer Discretionary,"The Home Depot, Inc."
+ORCL,Information Technology,Oracle Corporation
+CVX,Energy,Chevron Corporation
+MRK,Health Care,"Merck & Co., Inc."
+ABBV,Health Care,AbbVie Inc.
+COST,Consumer Staples,Costco Wholesale Corporation
+KO,Consumer Staples,The Coca-Cola Company
+ADBE,Information Technology,Adobe Inc.
+PEP,Consumer Staples,"PepsiCo, Inc."
+CSCO,Information Technology,"Cisco Systems, Inc."
+BAC,Financials,Bank of America Corporation
+CRM,Information Technology,"Salesforce.com, inc."
+MCD,Consumer Discretionary,McDonald's Corporation
+NFLX,Communication Services,"Netflix, Inc."
+PFE,Health Care,Pfizer Inc.
+TMO,Health Care,Thermo Fisher Scientific Inc.
+TMUS,Communication Services,"T-Mobile US, Inc."
+CMCSA,Communication Services,Comcast Corporation
+ABT,Health Care,Abbott Laboratories
+AMD,Information Technology,"Advanced Micro Devices, Inc."
+NKE,Consumer Discretionary,"NIKE, Inc."
+INTC,Information Technology,Intel Corporation
+DIS,Communication Services,The Walt Disney Company
+VZ,Communication Services,Verizon Communications Inc.
+WFC,Financials,Wells Fargo & Company
+COP,Energy,ConocoPhillips
+DHR,Health Care,Danaher Corporation
+INTU,Information Technology,Intuit Inc.
+PM,Consumer Staples,Philip Morris International Inc.
+AMGN,Health Care,Amgen Inc.
+IBM,Information Technology,International Business Machines Corporation
+TXN,Information Technology,Texas Instruments Incorporated
+UNP,Industrials,Union Pacific Corporation
+QCOM,Information Technology,QUALCOMM Incorporated
+HON,Industrials,Honeywell International Inc.
+UPS,Industrials,"United Parcel Service, Inc."
+NOW,Information Technology,"ServiceNow, Inc."
+GE,Industrials,General Electric Company
+NEE,Utilities,"NextEra Energy, Inc."
+RTX,Industrials,Raytheon Technologies Corporation
+CAT,Industrials,Caterpillar Inc.
+MS,Financials,Morgan Stanley
+BA,Industrials,The Boeing Company
+LMT,Industrials,Lockheed Martin Corporation
+SPGI,Financials,S&P Global Inc.
+AMAT,Information Technology,"Applied Materials, Inc."
+T,Communication Services,AT&T Inc.
+LOW,Consumer Discretionary,"Lowe's Companies, Inc."
+AXP,Financials,American Express Company
+ELV,Industrials,Elbit Systems Ltd.
+SBUX,Consumer Discretionary,Starbucks Corporation
+DE,Consumer Discretionary,Deere & Company
+BMY,Health Care,Bristol-Myers Squibb Company
+SYK,Health Care,Stryker Corporation
+TJX,Consumer Discretionary,TJX Companies Inc.
+GS,Financials,"The Goldman Sachs Group, Inc."
+BKNG,Consumer Discretionary,Booking Holdings Inc.
+GILD,Health Care,"Gilead Sciences, Inc."
+SCHW,Financials,The Charles Schwab Corporation
+MMC,Financials,"Marsh & McLennan Companies, Inc."
+VRTX,Health Care,Vertex Pharmaceuticals Incorporated
+PLD,Real Estate,"Prologis, Inc."
+PGR,Financials,The Progressive Corporation
+ISRG,Health Care,"Intuitive Surgical, Inc."
+CI,Health Care,Cigna Corporation
+BLK,Financials,"BlackRock, Inc."
+MDLZ,Consumer Staples,"Mondelez International, Inc."
+ADP,Information Technology,"Automatic Data Processing, Inc."
+CVS,Health Care,CVS Health Corporation
+UBER,Industrials,"Uber Technologies, Inc."
+REGN,Health Care,"Regeneron Pharmaceuticals, Inc."
+AMT,Real Estate,American Tower Corporation
+SLB,Energy,Schlumberger Limited
+ADI,Information Technology,"Analog Devices, Inc."
+LRCX,Information Technology,Lam Research Corporation
+C,Financials,Citigroup Inc.
+PANW,Information Technology,"Palo Alto Networks, Inc."
+ABNB,Industrials,"Airbnb, Inc."
+BSX,Health Care,Boston Scientific Corporation
+EOG,Energy,"EOG Resources, Inc."
+MU,Information Technology,"Micron Technology, Inc."
+SO,Utilities,The Southern Company
+BDX,Health Care,"Becton, Dickinson and Company"
+ZTS,Health Care,Zoetis Inc.
+SNPS,Information Technology,"Synopsys, Inc."
+NOC,Industrials,Northrop Grumman Corporation
+MO,Consumer Staples,"Altria Group, Inc."
+DUK,Utilities,Duke Energy Corporation
+EQIX,Real Estate,"Equinix, Inc."
+FI,Financials,"Franklin Resources, Inc."
+ITW,Industrials,Illinois Tool Works Inc.
+BX,Financials,The Blackstone Group Inc.
+WM,Industrials,"Waste Management, Inc."
+GD,Industrials,General Dynamics Corporation
+CDNS,Information Technology,"Cadence Design Systems, Inc."
+HUM,Health Care,Humana Inc.
+KLAC,Information Technology,KLA Corporation
+VMW,Information Technology,"VMware, Inc."
+APD,Materials,"Air Products and Chemicals, Inc."
+ANET,Information Technology,"Arista Networks, Inc."
+KKR,Financials,KKR & Co. Inc.
+CL,Consumer Staples,Colgate-Palmolive Company
+MCK,Health Care,McKesson Corporation
+ICE,Financials,"Intercontinental Exchange, Inc."
+SHW,Materials,The Sherwin-Williams Company
+HCA,Health Care,"HCA Healthcare, Inc."
+MPC,Energy,Marathon Petroleum Corporation
+FDX,Industrials,FedEx Corporation
+CHTR,Communication Services,"Charter Communications, Inc."
+CSX,Industrials,CSX Corporation
+PYPL,Information Technology,"PayPal Holdings, Inc."
+EPD,Energy,Enterprise Products Partners L.P.
+MCO,Financials,Moody's Corporation
+MAR,Consumer Discretionary,"Marriott International, Inc."
+PXD,Energy,Pioneer Natural Resources Company
+ORLY,Consumer Discretionary,O'Reilly Automotive

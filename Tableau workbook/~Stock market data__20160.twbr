@@ -1,0 +1,2040 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xml:base='https://vizhub' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Stockmarketdata_16990437494710' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='filtered_US_data+' inline='true' name='federated.10zw11v1p5tjpf1gsniat04x2m7p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='filtered_US_data' name='textscan.0rxx76n0darmj214foc9p1eve9ty'>
+            <connection class='textscan' directory='C:/Users/IRC-240/AppData/Local/Temp/TableauTemp/1244191023/data' filename='filtered_US_data.csv' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0rxx76n0darmj214foc9p1eve9ty' name='GICScategories.csv' table='[GICScategories#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='symbol' ordinal='0' />
+            <column datatype='string' name='GICSsector' ordinal='1' />
+            <column datatype='string' name='company_name' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation join='left' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[filtered_US_data.csv].[Ticker Symbol]' />
+                <expression op='[GICScategories.csv2].[symbol]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.0rxx76n0darmj214foc9p1eve9ty' name='filtered_US_data.csv' table='[filtered_US_data#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                <column datatype='date' name='Date' ordinal='0' />
+                <column datatype='string' name='Company Name' ordinal='1' />
+                <column datatype='string' name='Ticker Symbol' ordinal='2' />
+                <column datatype='real' name='Oct2023 Market Cap' ordinal='3' />
+                <column datatype='real' name='Open' ordinal='4' />
+                <column datatype='real' name='Low' ordinal='5' />
+                <column datatype='real' name='High' ordinal='6' />
+                <column datatype='real' name='Close' ordinal='7' />
+                <column datatype='real' name='Volume' ordinal='8' />
+                <column datatype='real' name='Daily Percent Change' ordinal='9' />
+              </columns>
+            </relation>
+            <relation connection='textscan.0rxx76n0darmj214foc9p1eve9ty' name='GICScategories.csv2' table='[GICScategories#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                <column datatype='string' name='symbol' ordinal='0' />
+                <column datatype='string' name='GICSsector' ordinal='1' />
+                <column datatype='string' name='company_name' ordinal='2' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.0rxx76n0darmj214foc9p1eve9ty' name='GICScategories.csv' table='[GICScategories#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='symbol' ordinal='0' />
+              <column datatype='string' name='GICSsector' ordinal='1' />
+              <column datatype='string' name='company_name' ordinal='2' />
+            </columns>
+          </relation>
+          <relation join='left' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[filtered_US_data.csv1].[Ticker Symbol]' />
+                <expression op='[GICScategories.csv1].[symbol]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.0rxx76n0darmj214foc9p1eve9ty' name='filtered_US_data.csv1' table='[filtered_US_data#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                <column datatype='date' name='Date' ordinal='0' />
+                <column datatype='string' name='Company Name' ordinal='1' />
+                <column datatype='string' name='Ticker Symbol' ordinal='2' />
+                <column datatype='real' name='Oct2023 Market Cap' ordinal='3' />
+                <column datatype='real' name='Open' ordinal='4' />
+                <column datatype='real' name='Low' ordinal='5' />
+                <column datatype='real' name='High' ordinal='6' />
+                <column datatype='real' name='Close' ordinal='7' />
+                <column datatype='real' name='Volume' ordinal='8' />
+                <column datatype='real' name='Daily Percent Change' ordinal='9' />
+              </columns>
+            </relation>
+            <relation connection='textscan.0rxx76n0darmj214foc9p1eve9ty' name='GICScategories.csv1' table='[GICScategories#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                <column datatype='string' name='symbol' ordinal='0' />
+                <column datatype='string' name='GICSsector' ordinal='1' />
+                <column datatype='string' name='company_name' ordinal='2' />
+              </columns>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Close (filtered_US_data.csv1)]' value='[filtered_US_data.csv1].[Close]' />
+          <map key='[Close]' value='[filtered_US_data.csv].[Close]' />
+          <map key='[Company Name (filtered_US_data.csv1)]' value='[filtered_US_data.csv1].[Company Name]' />
+          <map key='[Company Name]' value='[filtered_US_data.csv].[Company Name]' />
+          <map key='[Daily Percent Change (filtered_US_data.csv1)]' value='[filtered_US_data.csv1].[Daily Percent Change]' />
+          <map key='[Daily Percent Change]' value='[filtered_US_data.csv].[Daily Percent Change]' />
+          <map key='[Date (filtered_US_data.csv1)]' value='[filtered_US_data.csv1].[Date]' />
+          <map key='[Date]' value='[filtered_US_data.csv].[Date]' />
+          <map key='[GICSsector (GICScategories.csv1)]' value='[GICScategories.csv1].[GICSsector]' />
+          <map key='[GICSsector (GICScategories.csv2)]' value='[GICScategories.csv2].[GICSsector]' />
+          <map key='[GICSsector]' value='[GICScategories.csv].[GICSsector]' />
+          <map key='[High (filtered_US_data.csv1)]' value='[filtered_US_data.csv1].[High]' />
+          <map key='[High]' value='[filtered_US_data.csv].[High]' />
+          <map key='[Low (filtered_US_data.csv1)]' value='[filtered_US_data.csv1].[Low]' />
+          <map key='[Low]' value='[filtered_US_data.csv].[Low]' />
+          <map key='[Oct2023 Market Cap (filtered_US_data.csv1)]' value='[filtered_US_data.csv1].[Oct2023 Market Cap]' />
+          <map key='[Oct2023 Market Cap]' value='[filtered_US_data.csv].[Oct2023 Market Cap]' />
+          <map key='[Open (filtered_US_data.csv1)]' value='[filtered_US_data.csv1].[Open]' />
+          <map key='[Open]' value='[filtered_US_data.csv].[Open]' />
+          <map key='[Ticker Symbol (filtered_US_data.csv1)]' value='[filtered_US_data.csv1].[Ticker Symbol]' />
+          <map key='[Ticker Symbol]' value='[filtered_US_data.csv].[Ticker Symbol]' />
+          <map key='[Volume (filtered_US_data.csv1)]' value='[filtered_US_data.csv1].[Volume]' />
+          <map key='[Volume]' value='[filtered_US_data.csv].[Volume]' />
+          <map key='[company_name (GICScategories.csv1)]' value='[GICScategories.csv1].[company_name]' />
+          <map key='[company_name (GICScategories.csv2)]' value='[GICScategories.csv2].[company_name]' />
+          <map key='[company_name]' value='[GICScategories.csv].[company_name]' />
+          <map key='[symbol (GICScategories.csv1)]' value='[GICScategories.csv1].[symbol]' />
+          <map key='[symbol (GICScategories.csv2)]' value='[GICScategories.csv2].[symbol]' />
+          <map key='[symbol]' value='[GICScategories.csv].[symbol]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[filtered_US_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[GICScategories.csv2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[GICScategories.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[filtered_US_data.csv1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[GICScategories.csv1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[filtered_US_data.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company Name]</local-name>
+            <parent-name>[filtered_US_data.csv]</parent-name>
+            <remote-alias>Company Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ticker Symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ticker Symbol]</local-name>
+            <parent-name>[filtered_US_data.csv]</parent-name>
+            <remote-alias>Ticker Symbol</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oct2023 Market Cap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Oct2023 Market Cap]</local-name>
+            <parent-name>[filtered_US_data.csv]</parent-name>
+            <remote-alias>Oct2023 Market Cap</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Open]</local-name>
+            <parent-name>[filtered_US_data.csv]</parent-name>
+            <remote-alias>Open</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Low]</local-name>
+            <parent-name>[filtered_US_data.csv]</parent-name>
+            <remote-alias>Low</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[High]</local-name>
+            <parent-name>[filtered_US_data.csv]</parent-name>
+            <remote-alias>High</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Close]</local-name>
+            <parent-name>[filtered_US_data.csv]</parent-name>
+            <remote-alias>Close</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Volume]</local-name>
+            <parent-name>[filtered_US_data.csv]</parent-name>
+            <remote-alias>Volume</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Daily Percent Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Daily Percent Change]</local-name>
+            <parent-name>[filtered_US_data.csv]</parent-name>
+            <remote-alias>Daily Percent Change</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[symbol (GICScategories.csv2)]</local-name>
+            <parent-name>[GICScategories.csv2]</parent-name>
+            <remote-alias>symbol</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GICSsector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GICSsector (GICScategories.csv2)]</local-name>
+            <parent-name>[GICScategories.csv2]</parent-name>
+            <remote-alias>GICSsector</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company_name (GICScategories.csv2)]</local-name>
+            <parent-name>[GICScategories.csv2]</parent-name>
+            <remote-alias>company_name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[symbol]</local-name>
+            <parent-name>[GICScategories.csv]</parent-name>
+            <remote-alias>symbol</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GICSsector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GICSsector]</local-name>
+            <parent-name>[GICScategories.csv]</parent-name>
+            <remote-alias>GICSsector</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company_name]</local-name>
+            <parent-name>[GICScategories.csv]</parent-name>
+            <remote-alias>company_name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date (filtered_US_data.csv1)]</local-name>
+            <parent-name>[filtered_US_data.csv1]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company Name (filtered_US_data.csv1)]</local-name>
+            <parent-name>[filtered_US_data.csv1]</parent-name>
+            <remote-alias>Company Name</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ticker Symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ticker Symbol (filtered_US_data.csv1)]</local-name>
+            <parent-name>[filtered_US_data.csv1]</parent-name>
+            <remote-alias>Ticker Symbol</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oct2023 Market Cap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Oct2023 Market Cap (filtered_US_data.csv1)]</local-name>
+            <parent-name>[filtered_US_data.csv1]</parent-name>
+            <remote-alias>Oct2023 Market Cap</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Open (filtered_US_data.csv1)]</local-name>
+            <parent-name>[filtered_US_data.csv1]</parent-name>
+            <remote-alias>Open</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Low (filtered_US_data.csv1)]</local-name>
+            <parent-name>[filtered_US_data.csv1]</parent-name>
+            <remote-alias>Low</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[High (filtered_US_data.csv1)]</local-name>
+            <parent-name>[filtered_US_data.csv1]</parent-name>
+            <remote-alias>High</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Close (filtered_US_data.csv1)]</local-name>
+            <parent-name>[filtered_US_data.csv1]</parent-name>
+            <remote-alias>Close</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Volume (filtered_US_data.csv1)]</local-name>
+            <parent-name>[filtered_US_data.csv1]</parent-name>
+            <remote-alias>Volume</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Daily Percent Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Daily Percent Change (filtered_US_data.csv1)]</local-name>
+            <parent-name>[filtered_US_data.csv1]</parent-name>
+            <remote-alias>Daily Percent Change</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[symbol (GICScategories.csv1)]</local-name>
+            <parent-name>[GICScategories.csv1]</parent-name>
+            <remote-alias>symbol</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GICSsector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GICSsector (GICScategories.csv1)]</local-name>
+            <parent-name>[GICScategories.csv1]</parent-name>
+            <remote-alias>GICSsector</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company_name (GICScategories.csv1)]</local-name>
+            <parent-name>[GICScategories.csv1]</parent-name>
+            <remote-alias>company_name</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Calculation2]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(AVG([Daily Percent Change]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='unique company name' datatype='real' name='[Calculation_1792432670105260032]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{fixed [Company Name]:avg([Oct2023 Market Cap])}' />
+      </column>
+      <column caption='Calculation1' datatype='real' name='[Calculation_1792432670267777026]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CORR ( { INCLUDE [Ticker Symbol] : SUM ( [Open])}, { INCLUDE [Ticker Symbol] : SUM ( [Open (filtered_US_data.csv1)])})' />
+      </column>
+      <column caption='NotSameCat filter' datatype='boolean' name='[Calculation_1792432670269308932]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Ticker Symbol] != [Ticker Symbol (filtered_US_data.csv1)]' />
+      </column>
+      <column caption='Performance' datatype='real' name='[Calculation_1792432670272581638]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Close]*100/[Calculation_1792432670286839817]' />
+      </column>
+      <column caption='start price' datatype='real' name='[Calculation_1792432670286839817]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [Ticker Symbol] : MIN(IF [Date] = {FIXED [Ticker Symbol] : MIN([Date])} THEN [Open] END)}' />
+      </column>
+      <column caption='final price' datatype='real' name='[Calculation_1792432670288306186]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [Ticker Symbol] : MAX(IF [Date] = {FIXED [Ticker Symbol] : MAX([Date])} THEN [Close] END)}' />
+      </column>
+      <column caption='Price gain' datatype='real' name='[Calculation_1792432670288883723]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([Calculation_1792432670288306186]-[Calculation_1792432670286839817])*100/[Calculation_1792432670286839817]' />
+      </column>
+      <column caption='index' datatype='integer' name='[Calculation_1792432670295486477]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='index()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Close (filtered US data.csv1)' datatype='real' name='[Close (filtered_US_data.csv1)]' role='measure' type='quantitative' />
+      <column caption='Company Name (filtered US data.csv1)' datatype='string' name='[Company Name (filtered_US_data.csv1)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Company Name]' role='dimension' type='nominal' />
+      <column caption='Daily Percent Change (filtered US data.csv1)' datatype='real' name='[Daily Percent Change (filtered_US_data.csv1)]' role='measure' type='quantitative' />
+      <column caption='Date (filtered US data.csv1)' datatype='date' name='[Date (filtered_US_data.csv1)]' role='dimension' type='ordinal' />
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column caption='GIC Ssector' datatype='string' name='[GICSsector]' role='dimension' type='nominal' />
+      <column caption='High (filtered US data.csv1)' datatype='real' name='[High (filtered_US_data.csv1)]' role='measure' type='quantitative' />
+      <column caption='Low (filtered US data.csv1)' datatype='real' name='[Low (filtered_US_data.csv1)]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Oct2023 Market Cap (bin)' datatype='integer' name='[Oct2023 Market Cap (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[Oct2023 Market Cap]' peg='0' size='2e+10' />
+      </column>
+      <column caption='Oct2023 Market Cap (filtered US data.csv1)' datatype='real' name='[Oct2023 Market Cap (filtered_US_data.csv1)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Oct2023 Market Cap]' role='measure' type='quantitative' />
+      <column caption='Open (filtered US data.csv1)' datatype='real' name='[Open (filtered_US_data.csv1)]' role='measure' type='quantitative' />
+      <column caption='Ticker Symbol (filtered US data.csv1)' datatype='string' name='[Ticker Symbol (filtered_US_data.csv1)]' role='dimension' type='nominal' />
+      <column caption='Volume (filtered US data.csv1)' datatype='real' name='[Volume (filtered_US_data.csv1)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='GICScategories.csv' datatype='table' name='[__tableau_internal_object_id__].[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='filtered_US_data.csv1' datatype='table' name='[__tableau_internal_object_id__].[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='filtered_US_data.csv' datatype='table' name='[__tableau_internal_object_id__].[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]' role='measure' type='quantitative' />
+      <column caption='company name (GICScategories.csv1)' datatype='string' name='[company_name (GICScategories.csv1)]' role='dimension' type='nominal' />
+      <column caption='company name (GICScategories.csv2)' datatype='string' name='[company_name (GICScategories.csv2)]' role='dimension' type='nominal' />
+      <column caption='Company Name1' datatype='string' name='[company_name]' role='dimension' type='nominal' />
+      <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+      <column-instance column='[GICSsector]' derivation='None' name='[none:GICSsector:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Date]' derivation='Week-Trunc' name='[twk:Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Company Name)' hidden='true' name='[Action (Company Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Company Name]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Oct2023 Market Cap (bin))' hidden='true' name='[Action (Oct2023 Market Cap (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Oct2023 Market Cap (bin)]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (WEEK(Date),GIC Ssector)' hidden='true' name='[Action (WEEK(Date),GIC Ssector)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[twk:Date:ok]' />
+          <groupfilter function='level-members' level='[GICSsector]' />
+        </groupfilter>
+      </group>
+      <group caption='Top Losers' name='[Company Name Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='SUM([Calculation_1792432670288883723])' function='order' user:ui-marker='order'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Company Name]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[Company Name]' member='&quot;Meta Platforms (Facebook)&quot;' />
+                <groupfilter function='member' level='[Company Name]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <group caption='top/bottom 5' delimiter=',' name='[Set 1]' name-style='unqualified'>
+        <groupfilter function='union'>
+          <groupfilter field='[Company Name Set]' function='reference' />
+          <groupfilter field='[Top Winners]' function='reference' />
+        </groupfilter>
+      </group>
+      <group caption='Top Winners' name='[Top Winners]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='SUM([Calculation_1792432670288883723])' function='order' user:ui-marker='order'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Company Name]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[Company Name]' member='&quot;Meta Platforms (Facebook)&quot;' />
+                <groupfilter function='member' level='[Company Name]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0h6vm4u137rwsj1g2m7vq0kht6dm.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/03/2023 06:00:51 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1' table='[Extract].[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06' table='[Extract].[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]' type='table' />
+            <relation name='GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1' table='[Extract].[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]' type='table' />
+            <relation name='filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263' table='[Extract].[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[Close (filtered_US_data.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[Close]' />
+            <map key='[Close]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[Close]' />
+            <map key='[Company Name (filtered_US_data.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[Company Name]' />
+            <map key='[Company Name]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[Company Name]' />
+            <map key='[Daily Percent Change (filtered_US_data.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[Daily Percent Change]' />
+            <map key='[Daily Percent Change]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[Daily Percent Change]' />
+            <map key='[Date (filtered_US_data.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[Date]' />
+            <map key='[Date]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[Date]' />
+            <map key='[GICSsector (GICScategories.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[GICSsector]' />
+            <map key='[GICSsector (GICScategories.csv2)]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[GICSsector]' />
+            <map key='[GICSsector]' value='[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1].[GICSsector]' />
+            <map key='[High (filtered_US_data.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[High]' />
+            <map key='[High]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[High]' />
+            <map key='[Low (filtered_US_data.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[Low]' />
+            <map key='[Low]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[Low]' />
+            <map key='[Oct2023 Market Cap (filtered_US_data.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[Oct2023 Market Cap]' />
+            <map key='[Oct2023 Market Cap]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[Oct2023 Market Cap]' />
+            <map key='[Open (filtered_US_data.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[Open]' />
+            <map key='[Open]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[Open]' />
+            <map key='[Ticker Symbol (filtered_US_data.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[Ticker Symbol]' />
+            <map key='[Ticker Symbol]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[Ticker Symbol]' />
+            <map key='[Volume (filtered_US_data.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[Volume]' />
+            <map key='[Volume]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[Volume]' />
+            <map key='[company_name (GICScategories.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[company_name]' />
+            <map key='[company_name (GICScategories.csv2)]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[company_name]' />
+            <map key='[company_name]' value='[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1].[company_name]' />
+            <map key='[symbol (GICScategories.csv1)]' value='[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263].[symbol]' />
+            <map key='[symbol (GICScategories.csv2)]' value='[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06].[symbol]' />
+            <map key='[symbol]' value='[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1].[symbol]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>filtered_US_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1715</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company Name]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>Company Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>filtered_US_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1711</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ticker Symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ticker Symbol]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>Ticker Symbol</remote-alias>
+              <ordinal>2</ordinal>
+              <family>filtered_US_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1712</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Oct2023 Market Cap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Oct2023 Market Cap]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>Oct2023 Market Cap</remote-alias>
+              <ordinal>3</ordinal>
+              <family>filtered_US_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1600</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Open</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Open]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>Open</remote-alias>
+              <ordinal>4</ordinal>
+              <family>filtered_US_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>77837</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Low</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Low]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>Low</remote-alias>
+              <ordinal>5</ordinal>
+              <family>filtered_US_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>105144</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>High</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[High]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>High</remote-alias>
+              <ordinal>6</ordinal>
+              <family>filtered_US_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>91290</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Close</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Close]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>Close</remote-alias>
+              <ordinal>7</ordinal>
+              <family>filtered_US_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79143</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Volume</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Volume]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>Volume</remote-alias>
+              <ordinal>8</ordinal>
+              <family>filtered_US_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>247629</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Daily Percent Change</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Daily Percent Change]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>Daily Percent Change</remote-alias>
+              <ordinal>9</ordinal>
+              <family>filtered_US_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>226074</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[symbol (GICScategories.csv2)]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>symbol</remote-alias>
+              <ordinal>10</ordinal>
+              <family>GICScategories.csv2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>469</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GICSsector</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GICSsector (GICScategories.csv2)]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>GICSsector</remote-alias>
+              <ordinal>11</ordinal>
+              <family>GICScategories.csv2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company_name (GICScategories.csv2)]</local-name>
+              <parent-name>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</parent-name>
+              <remote-alias>company_name</remote-alias>
+              <ordinal>12</ordinal>
+              <family>GICScategories.csv2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>469</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[symbol]</local-name>
+              <parent-name>[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]</parent-name>
+              <remote-alias>symbol</remote-alias>
+              <ordinal>13</ordinal>
+              <family>GICScategories.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>133</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GICSsector</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GICSsector]</local-name>
+              <parent-name>[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]</parent-name>
+              <remote-alias>GICSsector</remote-alias>
+              <ordinal>14</ordinal>
+              <family>GICScategories.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company_name]</local-name>
+              <parent-name>[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]</parent-name>
+              <remote-alias>company_name</remote-alias>
+              <ordinal>15</ordinal>
+              <family>GICScategories.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>133</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date (filtered_US_data.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>16</ordinal>
+              <family>filtered_US_data.csv1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1715</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company Name (filtered_US_data.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>Company Name</remote-alias>
+              <ordinal>17</ordinal>
+              <family>filtered_US_data.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1659</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ticker Symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ticker Symbol (filtered_US_data.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>Ticker Symbol</remote-alias>
+              <ordinal>18</ordinal>
+              <family>filtered_US_data.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1660</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Oct2023 Market Cap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Oct2023 Market Cap (filtered_US_data.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>Oct2023 Market Cap</remote-alias>
+              <ordinal>19</ordinal>
+              <family>filtered_US_data.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1595</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Open</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Open (filtered_US_data.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>Open</remote-alias>
+              <ordinal>20</ordinal>
+              <family>filtered_US_data.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75539</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Low</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Low (filtered_US_data.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>Low</remote-alias>
+              <ordinal>21</ordinal>
+              <family>filtered_US_data.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99639</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>High</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[High (filtered_US_data.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>High</remote-alias>
+              <ordinal>22</ordinal>
+              <family>filtered_US_data.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>102392</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Close</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Close (filtered_US_data.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>Close</remote-alias>
+              <ordinal>23</ordinal>
+              <family>filtered_US_data.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>73047</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Volume</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Volume (filtered_US_data.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>Volume</remote-alias>
+              <ordinal>24</ordinal>
+              <family>filtered_US_data.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>247629</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Daily Percent Change</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Daily Percent Change (filtered_US_data.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>Daily Percent Change</remote-alias>
+              <ordinal>25</ordinal>
+              <family>filtered_US_data.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>215295</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[symbol (GICScategories.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>symbol</remote-alias>
+              <ordinal>26</ordinal>
+              <family>GICScategories.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>527</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GICSsector</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GICSsector (GICScategories.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>GICSsector</remote-alias>
+              <ordinal>27</ordinal>
+              <family>GICScategories.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company_name (GICScategories.csv1)]</local-name>
+              <parent-name>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</parent-name>
+              <remote-alias>company_name</remote-alias>
+              <ordinal>28</ordinal>
+              <family>GICScategories.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>527</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:GICSsector:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Information Technology&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Energy&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Materials&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Financials&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Communication Services&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Health Care&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Real Estate&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Industrials&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Consumer Discretionary&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Utilities&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Consumer Staples&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='GICScategories.csv' id='GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1'>
+            <properties context=''>
+              <relation connection='textscan.0rxx76n0darmj214foc9p1eve9ty' name='GICScategories.csv' table='[GICScategories#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='symbol' ordinal='0' />
+                  <column datatype='string' name='GICSsector' ordinal='1' />
+                  <column datatype='string' name='company_name' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1' table='[Extract].[GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1]' type='table' />
+            </properties>
+          </object>
+          <object caption='filtered_US_data.csv1' id='filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263'>
+            <properties context=''>
+              <relation join='left' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[filtered_US_data.csv1].[Ticker Symbol]' />
+                    <expression op='[GICScategories.csv1].[symbol]' />
+                  </expression>
+                </clause>
+                <relation connection='textscan.0rxx76n0darmj214foc9p1eve9ty' name='filtered_US_data.csv1' table='[filtered_US_data#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='string' name='Company Name' ordinal='1' />
+                    <column datatype='string' name='Ticker Symbol' ordinal='2' />
+                    <column datatype='real' name='Oct2023 Market Cap' ordinal='3' />
+                    <column datatype='real' name='Open' ordinal='4' />
+                    <column datatype='real' name='Low' ordinal='5' />
+                    <column datatype='real' name='High' ordinal='6' />
+                    <column datatype='real' name='Close' ordinal='7' />
+                    <column datatype='real' name='Volume' ordinal='8' />
+                    <column datatype='real' name='Daily Percent Change' ordinal='9' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0rxx76n0darmj214foc9p1eve9ty' name='GICScategories.csv1' table='[GICScategories#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='symbol' ordinal='0' />
+                    <column datatype='string' name='GICSsector' ordinal='1' />
+                    <column datatype='string' name='company_name' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263' table='[Extract].[filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263]' type='table' />
+            </properties>
+          </object>
+          <object caption='filtered_US_data.csv' id='filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06'>
+            <properties context=''>
+              <relation join='left' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[filtered_US_data.csv].[Ticker Symbol]' />
+                    <expression op='[GICScategories.csv2].[symbol]' />
+                  </expression>
+                </clause>
+                <relation connection='textscan.0rxx76n0darmj214foc9p1eve9ty' name='filtered_US_data.csv' table='[filtered_US_data#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='string' name='Company Name' ordinal='1' />
+                    <column datatype='string' name='Ticker Symbol' ordinal='2' />
+                    <column datatype='real' name='Oct2023 Market Cap' ordinal='3' />
+                    <column datatype='real' name='Open' ordinal='4' />
+                    <column datatype='real' name='Low' ordinal='5' />
+                    <column datatype='real' name='High' ordinal='6' />
+                    <column datatype='real' name='Close' ordinal='7' />
+                    <column datatype='real' name='Volume' ordinal='8' />
+                    <column datatype='real' name='Daily Percent Change' ordinal='9' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0rxx76n0darmj214foc9p1eve9ty' name='GICScategories.csv2' table='[GICScategories#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='symbol' ordinal='0' />
+                    <column datatype='string' name='GICSsector' ordinal='1' />
+                    <column datatype='string' name='company_name' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06' table='[Extract].[filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Ticker Symbol]' />
+              <expression op='[symbol]' />
+            </expression>
+            <first-end-point object-id='filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06' />
+            <second-end-point guaranteed-value='true' object-id='GICScategories.csv_6D03A833E6FE4E2EA2C5DA5712400BD1' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[Ticker Symbol]' />
+                <expression op='[Ticker Symbol (filtered_US_data.csv1)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Date]' />
+                <expression op='[Date (filtered_US_data.csv1)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='filtered_US_data.csv_A441A781ECB843BC8132E6CDA764BF06' />
+            <second-end-point object-id='filtered_US_data.csv_0A07FC01A5464DA996F9DFDC388C2263' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_6EB6CB94A3C847EFA931A4D1A252DD2E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Performance over Last 2 Years' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_A9B77A7EF7B1455CB11C2C11CA4A39A8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Number of Companies by Market Cap' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_E7CBE2631F384D3FA020CF878774940F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='10 Largest Companies' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_D74E939345A146459ED4BBB57DB9E001]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Top 10 Winners/Losers' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='10 Largest Companies'>
+      <repository-location id='10LargestCompanies' path='/workbooks/Stockmarketdata_16990437494710' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='filtered_US_data+' name='federated.10zw11v1p5tjpf1gsniat04x2m7p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10zw11v1p5tjpf1gsniat04x2m7p'>
+            <column datatype='string' name='[Company Name]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='GIC Ssector' datatype='string' name='[GICSsector]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Oct2023 Market Cap (bin)' datatype='integer' name='[Oct2023 Market Cap (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[Oct2023 Market Cap]' peg='0' size='2e+10' />
+            </column>
+            <column datatype='real' name='[Oct2023 Market Cap]' role='measure' type='quantitative' />
+            <column-instance column='[Company Name]' derivation='None' name='[none:Company Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Oct2023 Market Cap]' derivation='Sum' name='[sum:Oct2023 Market Cap:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Week-Trunc' name='[twk:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Oct2023 Market Cap (bin))]'>
+            <groupfilter function='level-members' level='[Oct2023 Market Cap (bin)]' user:ui-action-filter='[Action2_A9B77A7EF7B1455CB11C2C11CA4A39A8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (WEEK(Date),GIC Ssector)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_6EB6CB94A3C847EFA931A4D1A252DD2E]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[twk:Date:ok]' />
+              <groupfilter function='level-members' level='[GICSsector]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Company Name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Oct2023 Market Cap])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:Company Name:nk]' />
+                  <groupfilter function='member' level='[none:Company Name:nk]' member='&quot;Meta Platforms (Facebook)&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Date:ok]'>
+            <groupfilter function='member' level='[none:Date:ok]' member='#2023-10-27#' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Company Name:nk]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Date:ok]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (WEEK(Date),GIC Ssector)]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Oct2023 Market Cap (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[sum:Oct2023 Market Cap:qk]' value='c&quot;$&quot;#,##0,,,B;-&quot;$&quot;#,##0,,,B' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='16' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[sum:Oct2023 Market Cap:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[sum:Oct2023 Market Cap:qk]' />
+              <color column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[sum:Oct2023 Market Cap:qk]' />
+              <text column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Company Name:nk]' />
+              <text column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[sum:Oct2023 Market Cap:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CA862A88-5779-4E43-A47D-626FFF7E3E66}' />
+    </worksheet>
+    <worksheet name='Number of Companies by Market Cap'>
+      <repository-location id='NumberofCompaniesbyMarketCap' path='/workbooks/Stockmarketdata_16990437494710' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='filtered_US_data+' name='federated.10zw11v1p5tjpf1gsniat04x2m7p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10zw11v1p5tjpf1gsniat04x2m7p'>
+            <column datatype='string' name='[Company Name]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='GIC Ssector' datatype='string' name='[GICSsector]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Oct2023 Market Cap (bin)' datatype='integer' name='[Oct2023 Market Cap (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[Oct2023 Market Cap]' peg='0' size='2e+10' />
+            </column>
+            <column datatype='real' name='[Oct2023 Market Cap]' role='measure' type='quantitative' />
+            <column-instance column='[Company Name]' derivation='CountD' name='[ctd:Company Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Oct2023 Market Cap (bin)]' derivation='None' name='[none:Oct2023 Market Cap (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Week-Trunc' name='[twk:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Company Name)]'>
+            <groupfilter function='member' level='[Company Name]' member='&quot;Walmart&quot;' user:ui-action-filter='[Action3_E7CBE2631F384D3FA020CF878774940F]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (WEEK(Date),GIC Ssector)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_6EB6CB94A3C847EFA931A4D1A252DD2E]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[twk:Date:ok]' />
+              <groupfilter function='level-members' level='[GICSsector]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Date:ok]'>
+            <groupfilter function='member' level='[none:Date:ok]' member='#2023-10-27#' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Date:ok]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (WEEK(Date),GIC Ssector)]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Company Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[ctd:Company Name:qk]' scope='rows' value='Number of Companies' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[ctd:Company Name:qk]</rows>
+        <cols>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Oct2023 Market Cap (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Oct2023 Market Cap (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{CF95D468-E743-4B89-94B0-CF65934F8D02}' />
+    </worksheet>
+    <worksheet name='Performance over Last 2 Years'>
+      <repository-location id='PerformanceoverLast2Years' path='/workbooks/Stockmarketdata_16990437494710' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='filtered_US_data+' name='federated.10zw11v1p5tjpf1gsniat04x2m7p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10zw11v1p5tjpf1gsniat04x2m7p'>
+            <column caption='Performance' datatype='real' name='[Calculation_1792432670272581638]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Close]*100/[Calculation_1792432670286839817]' />
+            </column>
+            <column caption='start price' datatype='real' name='[Calculation_1792432670286839817]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [Ticker Symbol] : MIN(IF [Date] = {FIXED [Ticker Symbol] : MIN([Date])} THEN [Open] END)}' />
+            </column>
+            <column datatype='real' name='[Close]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Company Name]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='GIC Ssector' datatype='string' name='[GICSsector]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Oct2023 Market Cap (bin)' datatype='integer' name='[Oct2023 Market Cap (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[Oct2023 Market Cap]' peg='0' size='2e+10' />
+            </column>
+            <column datatype='real' name='[Oct2023 Market Cap]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Open]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Ticker Symbol]' role='dimension' type='nominal' />
+            <column-instance column='[GICSsector]' derivation='Attribute' name='[attr:GICSsector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1792432670272581638]' derivation='Avg' name='[avg:Calculation_1792432670272581638:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Company Name]' derivation='None' name='[none:Company Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GICSsector]' derivation='None' name='[none:GICSsector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Week-Trunc' name='[twk:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Company Name)]'>
+            <groupfilter function='member' level='[Company Name]' member='&quot;Walmart&quot;' user:ui-action-filter='[Action3_E7CBE2631F384D3FA020CF878774940F]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Oct2023 Market Cap (bin))]'>
+            <groupfilter function='level-members' level='[Oct2023 Market Cap (bin)]' user:ui-action-filter='[Action2_A9B77A7EF7B1455CB11C2C11CA4A39A8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Company Name:nk]'>
+            <groupfilter function='level-members' level='[none:Company Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:GICSsector:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:GICSsector:nk]' />
+              <groupfilter function='member' level='[none:GICSsector:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[twk:Date:qk]' included-values='in-range'>
+            <min>#2021-10-31 00:00:00#</min>
+            <max>#2023-10-24 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:GICSsector:nk]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[twk:Date:qk]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Company Name:nk]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Oct2023 Market Cap (bin))]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Company Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[avg:Calculation_1792432670272581638:qk]' field-type='quantitative' max='170.22956894694155' min='60.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:GICSsector:nk]' />
+              <text column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:GICSsector:nk]' />
+              <tooltip column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[attr:GICSsector:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[avg:Calculation_1792432670272581638:qk]</rows>
+        <cols>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[twk:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{7A8BFD79-3EA5-4671-ABA4-B903FFD38BFC}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <repository-location id='Sheet1' path='/workbooks/Stockmarketdata_16990437494710' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='filtered_US_data+' name='federated.10zw11v1p5tjpf1gsniat04x2m7p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10zw11v1p5tjpf1gsniat04x2m7p'>
+            <column caption='unique company name' datatype='real' name='[Calculation_1792432670105260032]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{fixed [Company Name]:avg([Oct2023 Market Cap])}' />
+            </column>
+            <column datatype='string' name='[Company Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Oct2023 Market Cap]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1792432670105260032]' derivation='Avg' name='[avg:Calculation_1792432670105260032:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Company Name]' derivation='None' name='[none:Company Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[avg:Calculation_1792432670105260032:qk]' />
+              <text column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Company Name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{21F63A50-4252-4A56-8D60-D288CFE3B3AC}' />
+    </worksheet>
+    <worksheet name='Top 10 Winners/Losers'>
+      <repository-location id='Top10WinnersLosers' path='/workbooks/Stockmarketdata_16990437494710' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='filtered_US_data+' name='federated.10zw11v1p5tjpf1gsniat04x2m7p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10zw11v1p5tjpf1gsniat04x2m7p'>
+            <column caption='start price' datatype='real' name='[Calculation_1792432670286839817]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [Ticker Symbol] : MIN(IF [Date] = {FIXED [Ticker Symbol] : MIN([Date])} THEN [Open] END)}' />
+            </column>
+            <column caption='final price' datatype='real' name='[Calculation_1792432670288306186]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [Ticker Symbol] : MAX(IF [Date] = {FIXED [Ticker Symbol] : MAX([Date])} THEN [Close] END)}' />
+            </column>
+            <column caption='Price gain' datatype='real' name='[Calculation_1792432670288883723]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([Calculation_1792432670288306186]-[Calculation_1792432670286839817])*100/[Calculation_1792432670286839817]' />
+            </column>
+            <column datatype='real' name='[Close]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Company Name]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='GIC Ssector' datatype='string' name='[GICSsector]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Oct2023 Market Cap (bin)' datatype='integer' name='[Oct2023 Market Cap (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[Oct2023 Market Cap]' peg='0' size='2e+10' />
+            </column>
+            <column datatype='real' name='[Oct2023 Market Cap]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Open]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Ticker Symbol]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1792432670288883723]' derivation='Median' name='[med:Calculation_1792432670288883723:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Company Name]' derivation='None' name='[none:Company Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1792432670288883723]' derivation='Sum' name='[sum:Calculation_1792432670288883723:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Week-Trunc' name='[twk:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Company Name)]'>
+            <groupfilter function='member' level='[Company Name]' member='&quot;Walmart&quot;' user:ui-action-filter='[Action3_E7CBE2631F384D3FA020CF878774940F]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Oct2023 Market Cap (bin))]'>
+            <groupfilter function='level-members' level='[Oct2023 Market Cap (bin)]' user:ui-action-filter='[Action2_A9B77A7EF7B1455CB11C2C11CA4A39A8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (WEEK(Date),GIC Ssector)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_6EB6CB94A3C847EFA931A4D1A252DD2E]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[twk:Date:ok]' />
+              <groupfilter function='level-members' level='[GICSsector]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Set 1]' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Company Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[med:Calculation_1792432670288883723:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Set 1]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (WEEK(Date),GIC Ssector)]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Oct2023 Market Cap (bin))]</column>
+            <column>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[Action (Company Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[med:Calculation_1792432670288883723:qk]' field-type='quantitative' max='600.0' min='-100.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='12' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[sum:Calculation_1792432670288883723:qk]' max='300.0' min='-100.0' num-steps='10' palette='red_green_diverging_10_0' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='2' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[sum:Calculation_1792432670288883723:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:Company Name:nk]</rows>
+        <cols>[federated.10zw11v1p5tjpf1gsniat04x2m7p].[med:Calculation_1792432670288883723:qk]</cols>
+      </table>
+      <simple-id uuid='{B5E12502-7868-489E-A810-DC2B81910C3A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <repository-location id='Dashboard1' path='/workbooks/Stockmarketdata_16990437494710' revision='' />
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='filtered_US_data+' name='federated.10zw11v1p5tjpf1gsniat04x2m7p' />
+      </datasources>
+      <datasource-dependencies datasource='federated.10zw11v1p5tjpf1gsniat04x2m7p'>
+        <column caption='GIC Ssector' datatype='string' name='[GICSsector]' role='dimension' type='nominal' />
+        <column-instance column='[GICSsector]' derivation='None' name='[none:GICSsector:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='7' param='horz' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone h='98222' id='5' type-v2='layout-basic' w='99000' x='500' y='889'>
+              <zone h='49111' id='3' name='Performance over Last 2 Years' w='35125' x='9563' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49111' id='13' name='Number of Companies by Market Cap' w='44188' x='500' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49111' id='9' name='Performance over Last 2 Years' param='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:GICSsector:nk]' type-v2='filter' w='9063' x='500' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98222' id='15' type-v2='empty' w='54812' x='44688' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='42444' id='14' name='10 Largest Companies' w='41375' x='60625' y='58000' />
+        <zone h='59778' id='16' name='Top 10 Winners/Losers' w='50188' x='49063' y='1333' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='19' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+                <zone h='49111' id='9' mode='checkdropdown' name='Performance over Last 2 Years' param='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:GICSsector:nk]' type-v2='filter' w='6750' x='500' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49111' id='3' is-fixed='true' name='Performance over Last 2 Years' w='37438' x='7250' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='59778' id='16' is-fixed='true' name='Top 10 Winners/Losers' w='50188' x='49063' y='1333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49111' id='13' is-fixed='true' name='Number of Companies by Market Cap' w='44188' x='500' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42444' id='14' is-fixed='true' name='10 Largest Companies' w='41375' x='60625' y='58000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3504714A-7E71-47C9-B8FD-F46B74663B08}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5EFF7E62-075C-4BE9-B1EA-111D5D279D83}' />
+    </window>
+    <window class='worksheet' name='Number of Companies by Market Cap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EE569DC2-3659-48D5-9562-26B498179CA5}' />
+    </window>
+    <window class='worksheet' name='10 Largest Companies'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='280'>
+            <card pane-specification-id='0' param='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[sum:Oct2023 Market Cap:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{26F4F53A-2012-47A0-B2FE-AB849BA5B83E}' />
+    </window>
+    <window class='worksheet' name='Performance over Last 2 Years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[twk:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:GICSsector:nk]' type='filter' />
+            <card pane-specification-id='10' param='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[none:GICSsector:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB5FDAC5-E62A-4273-8238-0F43C4A363EC}' />
+    </window>
+    <window class='worksheet' name='Top 10 Winners/Losers'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='375'>
+            <card pane-specification-id='1' param='[federated.10zw11v1p5tjpf1gsniat04x2m7p].[sum:Calculation_1792432670288883723:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4C7DC73-46A5-407A-8180-C1F5B82361B8}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='10 Largest Companies' />
+        <viewpoint name='Number of Companies by Market Cap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Performance over Last 2 Years'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Winners/Losers' />
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{E20828A0-7163-48CC-92DF-67CD6F4614FB}' />
+    </window>
+  </windows>
+</workbook>
